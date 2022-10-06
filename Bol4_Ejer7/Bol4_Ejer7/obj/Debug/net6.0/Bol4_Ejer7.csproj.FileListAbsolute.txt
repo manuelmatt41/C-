@@ -1,0 +1,30 @@
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.exe
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.deps.json
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.runtimeconfig.json
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.dll
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.pdb
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.csproj.AssemblyReference.cache
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.AssemblyInfoInputs.cache
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.AssemblyInfo.cs
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.csproj.CoreCompileInputs.cache
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.dll
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\refint\Bol4_Ejer7.dll
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.pdb
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.genruntimeconfig.cache
+C:\Users\manue\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\ref\Bol4_Ejer7.dll
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.exe
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.deps.json
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.runtimeconfig.json
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.dll
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\bin\Debug\net6.0\Bol4_Ejer7.pdb
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.csproj.AssemblyReference.cache
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.AssemblyInfoInputs.cache
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.AssemblyInfo.cs
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.dll
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\refint\Bol4_Ejer7.dll
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.pdb
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\Bol4_Ejer7.genruntimeconfig.cache
+C:\Users\Manuel Marín\source\repos\Bol4_Ejer7\Bol4_Ejer7\obj\Debug\net6.0\ref\Bol4_Ejer7.dll

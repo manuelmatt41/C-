@@ -1,0 +1,30 @@
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.csproj.AssemblyReference.cache
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.AssemblyInfoInputs.cache
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.AssemblyInfo.cs
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.exe
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.deps.json
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.runtimeconfig.json
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.dll
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.pdb
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.dll
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\refint\Boletin2.dll
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.pdb
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.genruntimeconfig.cache
+C:\Users\Manuel Marín\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\ref\Boletin2.dll
+C:\Users\manue\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.exe
+C:\Users\manue\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.deps.json
+C:\Users\manue\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.runtimeconfig.json
+C:\Users\manue\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.dll
+C:\Users\manue\source\repos\Boletin2\Boletin2\bin\Debug\net6.0\Boletin2.pdb
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.csproj.AssemblyReference.cache
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.AssemblyInfoInputs.cache
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.AssemblyInfo.cs
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.csproj.CoreCompileInputs.cache
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.dll
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\refint\Boletin2.dll
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.pdb
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\Boletin2.genruntimeconfig.cache
+C:\Users\manue\source\repos\Boletin2\Boletin2\obj\Debug\net6.0\ref\Boletin2.dll
