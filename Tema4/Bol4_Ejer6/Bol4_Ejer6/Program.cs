@@ -3,14 +3,14 @@
     internal class Program
     {
         static int counter = 0;
-        static void increment()
+        static void Increment()
         {
             counter++;
             Console.WriteLine(counter);
         }
         static void Main(string[] args)
         {
-            MyTimer t = new MyTimer(increment);
+            MyTimer t = new MyTimer(Increment);
             t.Interval = 1000;
             string op = "";
             do

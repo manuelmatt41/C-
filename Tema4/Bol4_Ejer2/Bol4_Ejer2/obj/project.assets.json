@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manuel Marín\\source\\repos\\Bol4_Ejer2\\Bol4_Ejer2\\Bol4_Ejer2.csproj",
+      "projectUniqueName": "C:\\Users\\Manuel Marín\\Documents\\C-\\Tema4\\Bol4_Ejer2\\Bol4_Ejer2\\Bol4_Ejer2.csproj",
       "projectName": "Bol4_Ejer2",
-      "projectPath": "C:\\Users\\Manuel Marín\\source\\repos\\Bol4_Ejer2\\Bol4_Ejer2\\Bol4_Ejer2.csproj",
+      "projectPath": "C:\\Users\\Manuel Marín\\Documents\\C-\\Tema4\\Bol4_Ejer2\\Bol4_Ejer2\\Bol4_Ejer2.csproj",
       "packagesPath": "C:\\Users\\Manuel Marín\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manuel Marín\\source\\repos\\Bol4_Ejer2\\Bol4_Ejer2\\obj\\",
+      "outputPath": "C:\\Users\\Manuel Marín\\Documents\\C-\\Tema4\\Bol4_Ejer2\\Bol4_Ejer2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Manuel Marín\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -16,7 +16,7 @@ namespace Bol4_Ejer2
             textBox1.Text = "";
             textBox1.Font = new Font("Lucida Console", 9f);
             Process[] p = Process.GetProcesses();
-            for (int i = 0; i < p.Length; i++)
+            for (int i = 0; i < p.Length; i++) //ArrayForEach
             {
                 textBox1.AppendText(string.Format($"PID: {p[i].Id,-10}Nombre: {CutName(p[i].ProcessName, 15),-20} {(p[i].MainWindowTitle.Length > 0 ? $"Titulo: {CutName(p[i].MainWindowTitle, 10),-11}" : "")}{Environment.NewLine}"));
             }
@@ -24,14 +24,7 @@ namespace Bol4_Ejer2
 
         private string CutName(string name, int maxCharacters)
         {
-            if (name.Length > maxCharacters)
-            {
-                return name.Substring(0, maxCharacters) + "...";
-            }
-            else
-            {
-                return name;
-            }
+            return name.Length > maxCharacters ? name.Substring(0, maxCharacters) + "..." : name;
         }
 
         private void button3_Click(object sender, EventArgs e)

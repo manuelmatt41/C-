@@ -5,7 +5,9 @@ public class MyTimer
     public MyTimer(MyTimerEventHandler myTimerEventHandler)
     {
         this.myTimerEventHandler = myTimerEventHandler;
-        new Thread(Execute).Start();
+        Thread t = new Thread(Execute);
+        t.IsBackground = true;
+        t.Start();
     }
 
     private void Execute()

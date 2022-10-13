@@ -32,3 +32,20 @@ C:\Users\manue\source\repos\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\refin
 C:\Users\manue\source\repos\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.pdb
 C:\Users\manue\source\repos\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.genruntimeconfig.cache
 C:\Users\manue\source\repos\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\ref\Bol4_Ejer2.dll
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\bin\Debug\net6.0-windows\Bol4_Ejer2.exe
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\bin\Debug\net6.0-windows\Bol4_Ejer2.deps.json
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\bin\Debug\net6.0-windows\Bol4_Ejer2.runtimeconfig.json
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\bin\Debug\net6.0-windows\Bol4_Ejer2.dll
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\bin\Debug\net6.0-windows\Bol4_Ejer2.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.csproj.AssemblyReference.cache
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.Form1.resources
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.csproj.GenerateResource.cache
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.AssemblyInfoInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.AssemblyInfo.cs
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.dll
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\refint\Bol4_Ejer2.dll
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\Bol4_Ejer2.genruntimeconfig.cache
+C:\Users\Manuel Marín\Documents\C-\Tema4\Bol4_Ejer2\Bol4_Ejer2\obj\Debug\net6.0-windows\ref\Bol4_Ejer2.dll
