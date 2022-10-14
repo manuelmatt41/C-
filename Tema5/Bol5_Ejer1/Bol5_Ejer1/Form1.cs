@@ -70,7 +70,7 @@ namespace Bol5_Ejer1
 #if FLAG
                 this.Text = e.KeyData.ToString();
 #else
-                this.Text = ((char)e.KeyValue).ToString();
+                this.Text = e.
 #endif
             }
             else

@@ -1,0 +1,17 @@
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\bin\Debug\net6.0-windows\Bol5_Ejer4.exe
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\bin\Debug\net6.0-windows\Bol5_Ejer4.deps.json
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\bin\Debug\net6.0-windows\Bol5_Ejer4.runtimeconfig.json
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\bin\Debug\net6.0-windows\Bol5_Ejer4.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\bin\Debug\net6.0-windows\Bol5_Ejer4.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.csproj.AssemblyReference.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.Form1.resources
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.csproj.GenerateResource.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.AssemblyInfoInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.AssemblyInfo.cs
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\refint\Bol5_Ejer4.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\Bol5_Ejer4.genruntimeconfig.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer4\Bol5_Ejer4\obj\Debug\net6.0-windows\ref\Bol5_Ejer4.dll
