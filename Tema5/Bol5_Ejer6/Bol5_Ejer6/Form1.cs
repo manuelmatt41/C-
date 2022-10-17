@@ -8,7 +8,7 @@ namespace Bol5_Ejer6
         }
 
         int x = 12;
-        int y = 41;
+        int y = 56;
         private void Form1_Load(object sender, EventArgs e)
         {
             new Form2().ShowDialog();
@@ -59,8 +59,25 @@ namespace Bol5_Ejer6
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
+            for (int i = 0; i < this.Controls.Count; i++)
+            {
+                if (this.Controls[i] is Button)
+                {
+                    ((Button)this.Controls[i]).BackColor = Color.FromArgb(-986896);
+                }
+            }
         }
 
         string[] buttons = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", "#" };
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            button1.PerformClick();
+        }
     }
 }

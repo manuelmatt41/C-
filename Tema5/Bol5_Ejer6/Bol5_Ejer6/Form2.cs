@@ -47,7 +47,7 @@ public class Form2 : Form
             {
                 if (pin == password)
                 {
-                    MessageBox.Show("Correct", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Correct", "", MessageBoxButtons.OK);
                     this.Hide();
                 }
                 else
@@ -60,6 +60,7 @@ public class Form2 : Form
                     Environment.Exit(0);
                 }
             }
+            textBox1.Clear();
         }
     }
 
