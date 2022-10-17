@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\manue\\.nuget\\packages\\": {}
+    "C:\\Users\\Manuel Marín\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manue\\Documents\\DAM\\c-\\Tema5\\Bol5_Ejer1\\Bol5_Ejer1\\Bol5_Ejer1.csproj",
+      "projectUniqueName": "C:\\Users\\Manuel Marín\\Documents\\C-\\Tema5\\Bol5_Ejer1\\Bol5_Ejer1\\Bol5_Ejer1.csproj",
       "projectName": "Bol5_Ejer1",
-      "projectPath": "C:\\Users\\manue\\Documents\\DAM\\c-\\Tema5\\Bol5_Ejer1\\Bol5_Ejer1\\Bol5_Ejer1.csproj",
-      "packagesPath": "C:\\Users\\manue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manue\\Documents\\DAM\\c-\\Tema5\\Bol5_Ejer1\\Bol5_Ejer1\\obj\\",
+      "projectPath": "C:\\Users\\Manuel Marín\\Documents\\C-\\Tema5\\Bol5_Ejer1\\Bol5_Ejer1\\Bol5_Ejer1.csproj",
+      "packagesPath": "C:\\Users\\Manuel Marín\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Manuel Marín\\Documents\\C-\\Tema5\\Bol5_Ejer1\\Bol5_Ejer1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\manue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Manuel Marín\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

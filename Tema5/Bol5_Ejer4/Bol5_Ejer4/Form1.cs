@@ -73,11 +73,11 @@ namespace Bol5_Ejer4
             }
             this.Text = $"{minutes:00}:{seconds:00}";
         }
+
         private delegate void execution();
         Dictionary<string, execution> executions;
         private string option;
         private int seconds;
         private int minutes;
-
     }
 }
