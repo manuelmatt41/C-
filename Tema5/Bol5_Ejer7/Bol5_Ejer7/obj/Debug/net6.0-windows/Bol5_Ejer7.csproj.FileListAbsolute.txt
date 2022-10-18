@@ -16,3 +16,21 @@ C:\Users\manue\source\repos\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\refin
 C:\Users\manue\source\repos\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.pdb
 C:\Users\manue\source\repos\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.genruntimeconfig.cache
 C:\Users\manue\source\repos\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\ref\Bol5_Ejer7.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.csproj.AssemblyReference.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.Form1.resources
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.Properties.Resources.resources
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.csproj.GenerateResource.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.AssemblyInfoInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.AssemblyInfo.cs
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\refint\Bol5_Ejer7.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\bin\Debug\net6.0-windows\Bol5_Ejer7.exe
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\bin\Debug\net6.0-windows\Bol5_Ejer7.deps.json
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\bin\Debug\net6.0-windows\Bol5_Ejer7.runtimeconfig.json
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\bin\Debug\net6.0-windows\Bol5_Ejer7.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\bin\Debug\net6.0-windows\Bol5_Ejer7.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\Bol5_Ejer7.genruntimeconfig.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer7\Bol5_Ejer7\obj\Debug\net6.0-windows\ref\Bol5_Ejer7.dll
