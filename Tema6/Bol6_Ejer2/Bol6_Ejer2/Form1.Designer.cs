@@ -32,6 +32,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -66,20 +68,40 @@
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox3.Size = new System.Drawing.Size(299, 397);
+            this.textBox3.Size = new System.Drawing.Size(504, 397);
             this.textBox3.TabIndex = 3;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(317, 15);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(93, 19);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Senitive case";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(416, 15);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 23);
+            this.textBox4.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 450);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,5 +113,7 @@
         private TextBox textBox2;
         private Button button1;
         private TextBox textBox3;
+        private CheckBox checkBox1;
+        private TextBox textBox4;
     }
 }

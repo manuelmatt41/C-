@@ -78,7 +78,7 @@ namespace Bol5_Ejer5._1
                     MessageBox.Show(errorMessage, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                for (int i = 0; i < mainListBox.SelectedItems.Count; i++)
+                for (int i = mainListBox.SelectedItems.Count - 1; i >= 0; i--)
                 {
                     secondListBox.Items.Insert(0, mainListBox.SelectedItems[i]);
                 }

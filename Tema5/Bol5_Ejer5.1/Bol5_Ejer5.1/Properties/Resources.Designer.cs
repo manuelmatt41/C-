@@ -81,7 +81,7 @@ namespace Bol5_Ejer5._1.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Como me lio el timer a lo tonto.
+        ///   Busca una cadena traducida similar a   Como me lio el timer a lo tonto  .
         /// </summary>
         internal static string Title {
             get {

@@ -11,30 +11,31 @@ public class Form2 : Form
 
     private void InitializeComponent()
     {
-        this.textBox1 = new System.Windows.Forms.TextBox();
-        this.SuspendLayout();
-        // 
-        // textBox1
-        // 
-        this.textBox1.Location = new System.Drawing.Point(12, 12);
-        this.textBox1.MaxLength = 4;
-        this.textBox1.Name = "textBox1";
-        this.textBox1.PasswordChar = '*';
-        this.textBox1.PlaceholderText = "Wirte your PIN";
-        this.textBox1.Size = new System.Drawing.Size(218, 23);
-        this.textBox1.TabIndex = 0;
-        this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyUp);
-        // 
-        // Form2
-        // 
-        this.ClientSize = new System.Drawing.Size(242, 45);
-        this.Controls.Add(this.textBox1);
-        this.Name = "Form2";
-        this.Text = "Write the PIN";
-        this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
-        this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyUp);
-        this.ResumeLayout(false);
-        this.PerformLayout();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.MaxLength = 4;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
+            this.textBox1.PlaceholderText = "Wirte your PIN";
+            this.textBox1.Size = new System.Drawing.Size(218, 23);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyUp);
+            // 
+            // Form2
+            // 
+            this.ClientSize = new System.Drawing.Size(242, 45);
+            this.Controls.Add(this.textBox1);
+            this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Write the PIN";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyUp);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
     }
 
