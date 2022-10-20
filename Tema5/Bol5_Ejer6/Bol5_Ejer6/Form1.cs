@@ -79,5 +79,16 @@ namespace Bol5_Ejer6
         {
             button1.PerformClick();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+            File.WriteAllText(saveFileDialog1.FileName, textBox1.Text);
+        }
+
+        private void Acercade_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Program to write and save phone numbers", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

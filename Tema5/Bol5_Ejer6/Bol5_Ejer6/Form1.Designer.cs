@@ -37,6 +37,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.Acercade = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,26 +84,29 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(193, 22);
             this.toolStripMenuItem1.Text = "Record number";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(156, 22);
+            this.toolStripMenuItem2.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.O)));
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 22);
             this.toolStripMenuItem2.Text = "Reset";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(156, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(193, 22);
             this.toolStripMenuItem3.Text = "Exit";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -111,6 +115,12 @@
             this.Acercade.Name = "Acercade";
             this.Acercade.Size = new System.Drawing.Size(52, 20);
             this.Acercade.Text = "About";
+            this.Acercade.Click += new System.EventHandler(this.Acercade_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "Texto |*.txt";
+            this.saveFileDialog1.Title = "Save file";
             // 
             // Form1
             // 
@@ -143,5 +153,6 @@
         private ToolStripMenuItem toolStripMenuItem2;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem toolStripMenuItem3;
+        private SaveFileDialog saveFileDialog1;
     }
 }
