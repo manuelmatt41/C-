@@ -23,6 +23,7 @@ namespace Bol5_Ejer8
 
         private void ViewImage()
         {
+            panel1.Controls.Clear();
             if (selectedImage.Width > this.Width)
             {
                 this.panel1.Size = selectedImage.Size;
@@ -38,6 +39,23 @@ namespace Bol5_Ejer8
 
         private void Form2_Resize(object sender, EventArgs e)
         {
+            ViewImage();
+        }
+
+        private void NextImage(object sender, EventArgs e)
+        {
+            int index = Array.FindIndex(images, (image) => image == selectedImage);
+            index++;
+            index = images.Length == index ? 0 : index;
+            selectedImage = images[index];
+            ViewImage();
+        }
+        private void PreviousImage(object sender, EventArgs e)
+        {
+            int index = Array.FindIndex(images, (image) => image == selectedImage);
+            index--;
+            index = index == -1 ? images.Length - 1 : index;
+            selectedImage = images[index];
             ViewImage();
         }
 
