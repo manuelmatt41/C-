@@ -24,6 +24,7 @@ namespace Bol5_Ejer8
             p.SizeMode = PictureBoxSizeMode.StretchImage;
             p.Size = new Size(100, 100);
             p.Image = image;
+            p.Anchor = AnchorStyles.None;
             p.Visible = true;
             return p;
         }
@@ -34,6 +35,7 @@ namespace Bol5_Ejer8
             p.Size = image.Size;
             p.Image = image;
             p.Location = location;
+            p.Anchor = AnchorStyles.None;
             p.Visible = true;
             return p;
         }

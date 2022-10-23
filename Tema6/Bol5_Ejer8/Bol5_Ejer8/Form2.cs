@@ -24,22 +24,36 @@ namespace Bol5_Ejer8
         private void ViewImage()
         {
             panel1.Controls.Clear();
+            ReScale();
+            panel1.Controls.Add(form1.CreatePictureBox(selectedImage, GetCenter()));
+        }
+
+        private void ReScale()
+        {
             if (selectedImage.Width > this.Width)
             {
-                this.panel1.Size = selectedImage.Size;
+                panel1.Size = selectedImage.Size;
                 this.Size = panel1.Size;
+                this.Height += 200;
             }
             else
             {
-                this.panel1.Size = new Size(this.Width, this.Height - 100);
+                panel1.Size = new Size(this.Width, this.Height - 300);
             }
-            Point center = new Point((panel1.Width / 2) - (selectedImage.Width / 2), (panel1.Height / 2) - (selectedImage.Height / 2));
-            panel1.Controls.Add(form1.CreatePictureBox(selectedImage, center));
+        }
+
+        private Point GetCenter()
+        {
+            return new Point((panel1.Width / 2) - (selectedImage.Width / 2), (panel1.Height / 2) - (selectedImage.Height / 2));
         }
 
         private void Form2_Resize(object sender, EventArgs e)
         {
-            ViewImage();
+            if (panel1.Controls.Count > 0)
+            {
+                ReScale();
+                ((PictureBox)panel1.Controls[0]).Location = GetCenter();
+            }
         }
 
         private void NextImage(object sender, EventArgs e)

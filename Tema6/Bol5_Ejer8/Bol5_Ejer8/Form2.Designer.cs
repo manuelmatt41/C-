@@ -43,7 +43,7 @@
             // 
             // previousBt
             // 
-            this.previousBt.Location = new System.Drawing.Point(12, 902);
+            this.previousBt.Location = new System.Drawing.Point(598, 902);
             this.previousBt.Name = "previousBt";
             this.previousBt.Size = new System.Drawing.Size(150, 46);
             this.previousBt.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // nextBt
             // 
-            this.nextBt.Location = new System.Drawing.Point(168, 902);
+            this.nextBt.Location = new System.Drawing.Point(754, 902);
             this.nextBt.Name = "nextBt";
             this.nextBt.Size = new System.Drawing.Size(150, 46);
             this.nextBt.TabIndex = 2;
