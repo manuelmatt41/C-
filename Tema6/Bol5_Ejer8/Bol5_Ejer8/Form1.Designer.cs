@@ -51,7 +51,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Open";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.SelectImageFile);
+            this.button1.Click += new System.EventHandler(this.UpdateData);
             // 
             // button2
             // 
@@ -61,7 +61,6 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "<";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.ChangeImage);
             // 
             // button3
             // 
@@ -71,7 +70,6 @@
             this.button3.TabIndex = 4;
             this.button3.Text = ">";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.ChangeImage);
             // 
             // label1
             // 
@@ -94,7 +92,6 @@
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Visor de imagenes";
-            this.Resize += new System.EventHandler(this.ScaleGallery);
             this.ResumeLayout(false);
             this.PerformLayout();
 

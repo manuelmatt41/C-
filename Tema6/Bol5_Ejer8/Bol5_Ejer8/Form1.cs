@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Bol5_Ejer8
 {
@@ -10,118 +11,54 @@ namespace Bol5_Ejer8
             InitializeComponent();
         }
 
-        private void AddPictureBox(Panel panel, Image[] images)
+        public FileInfo[] GetImagesFiles(string path, params string[] extensions)
         {
-            foreach (Image image in images)
+            if (!Directory.Exists(path))
             {
-                panel.Controls.Add(CreatePictureBox(image));
+                return new FileInfo[0];
             }
+            DirectoryInfo directory = new DirectoryInfo(path);
+            return Array.FindAll(directory.GetFiles(), (f) => extensions.Contains(f.Extension));
+        }
+
+        public Image[] GetImagesFromFiles(FileInfo[] imagesFiles)
+        {
+            List<Image> images = new List<Image>();
+            Array.ForEach(imagesFiles, (f) => images.Add(Image.FromFile(f.FullName)));
+            return images.ToArray();
+        }
+
+        private void OpenGalleryView()
+        {
+            Form2 f = new Form2();
+            f.Show();
+            f.UpdatePictureBox(images[0]);
+        }
+
+        private void OpenGalleryList()
+        {
+            Array.Reverse(images);
+            Array.ForEach(images, (i) => flowLayoutPanel1.Controls.Add(CreatePictureBox(i)));
         }
 
         public PictureBox CreatePictureBox(Image image)
         {
-            PictureBox p = new PictureBox();
-            p.SizeMode = PictureBoxSizeMode.StretchImage;
-            p.Size = new Size(100, 100);
-            p.Image = image;
-            p.Anchor = AnchorStyles.None;
-            p.Visible = true;
-            p.Click += new EventHandler(OpenGallery);
-            return p;
+            PictureBox pictureBox = new PictureBox();
+            pictureBox.Image = image;
+            pictureBox.Size = new Size(100, 100);
+            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            return pictureBox;
         }
 
-        private Image[] GetImages(string path)
-        {
-            if (!Directory.Exists(path))
-            {
-                return new Image[0];
-            }
-            List<Image> images = new List<Image>();
-            FileInfo[] imagesPath = GetFiles(new DirectoryInfo(path), new string[] { ".png", ".jpg", ".jpeg" });
-            if (imagesPath.Length == 0)
-            {
-                return new Image[0];
-            }
-            Array.ForEach(imagesPath, (imagePath) => images.Add(Image.FromFile(imagePath.FullName)));
-            imagesFiles = imagesPath;
-            return images.ToArray();
-        }
-
-        private FileInfo[] GetFiles(DirectoryInfo directoryInfo, string[] extensions)
-        {
-            return Array.FindAll(directoryInfo.GetFiles(), (file) => extensions.Contains(file.Extension));
-        }
-
-        private void OpenGallery(object sender, EventArgs e)
-        {
-            if (sender == button1)
-            {
-                images = GetImages(folderBrowserDialog1.SelectedPath);
-                form2 = new Form2(images, this);
-                form2.Show();
-                form2.Text = imagesFiles[form2.selectedImage].Name;
-            }
-            else
-            {
-                for (int i = 0; i < flowLayoutPanel1.Controls.Count; i++)
-                {
-                    if (sender == flowLayoutPanel1.Controls[i])
-                    {
-                        form2.pictureBox.Image = ((PictureBox)flowLayoutPanel1.Controls[i]).Image;
-                        form2.selectedImage = i;
-                        form2.Scale();
-                        form2.Text = imagesFiles[form2.selectedImage].Name;
-                    }
-                }
-            }
-        }
-
-        private void SelectImageFile(object sender, EventArgs e)
+        private void UpdateData(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowDialog();
-            AddPictureBox(flowLayoutPanel1, GetImages(folderBrowserDialog1.SelectedPath));
-            flowLayoutPanel1.Size = new Size(this.Size.Width, this.Height - 40);
-            flowLayoutPanel1.Location = new Point(0, 40);
-            OpenGallery(sender, e);
+            imagesFiles = GetImagesFiles(folderBrowserDialog1.SelectedPath, ".png", ".jpg", ".jpeg", ".gif");
+            images = GetImagesFromFiles(imagesFiles);
+            OpenGalleryList();
+            OpenGalleryView();
         }
 
-        private void ChangeImage(object sender, EventArgs e)
-        {
-            if (form2 != null)
-            {
-                if (sender == button2)
-                {
-                    form2.ImageUpdate(true);
-                }
-                else
-                {
-                    form2.ImageUpdate(false);
-                }
-                form2.Text = imagesFiles[form2.selectedImage].Name;
-            }
-        }
-
-        private void ChangeImage(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left)
-            {
-                button2.PerformClick();
-            }
-            if (e.KeyCode == Keys.Right)
-            {
-                button2.PerformClick();
-            }
-        }
-
-        private void ScaleGallery(object sender, EventArgs e)
-        {
-            if (flowLayoutPanel1 != null)
-            {
-                flowLayoutPanel1.Size = new Size(this.Size.Width, this.Height - 40);
-            }
-        }
-
-        Form2 form2;
         FileInfo[] imagesFiles;
         Image[] images;
     }

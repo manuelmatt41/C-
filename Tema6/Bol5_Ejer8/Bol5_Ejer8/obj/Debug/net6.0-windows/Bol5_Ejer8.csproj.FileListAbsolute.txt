@@ -15,7 +15,6 @@ C:\Users\Manuel Marín\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0
 C:\Users\Manuel Marín\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\Bol5_Ejer8.pdb
 C:\Users\Manuel Marín\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\Bol5_Ejer8.genruntimeconfig.cache
 C:\Users\Manuel Marín\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\ref\Bol5_Ejer8.dll
-C:\Users\Manuel Marín\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\Bol5_Ejer8.Form2.resources
 C:\Users\manue\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\bin\Debug\net6.0-windows\Bol5_Ejer8.exe
 C:\Users\manue\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\bin\Debug\net6.0-windows\Bol5_Ejer8.deps.json
 C:\Users\manue\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\bin\Debug\net6.0-windows\Bol5_Ejer8.runtimeconfig.json
@@ -52,3 +51,4 @@ C:\Users\manue\Documents\DAM\c-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-win
 C:\Users\manue\Documents\DAM\c-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\Bol5_Ejer8.pdb
 C:\Users\manue\Documents\DAM\c-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\Bol5_Ejer8.genruntimeconfig.cache
 C:\Users\manue\Documents\DAM\c-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\ref\Bol5_Ejer8.dll
+C:\Users\Manuel Marín\Documents\C-\Tema6\Bol5_Ejer8\Bol5_Ejer8\obj\Debug\net6.0-windows\Bol5_Ejer8.Form2.resources
