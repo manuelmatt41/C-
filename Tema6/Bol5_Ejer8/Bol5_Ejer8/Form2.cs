@@ -17,64 +17,47 @@ namespace Bol5_Ejer8
             InitializeComponent();
             this.images = images;
             this.form1 = form1;
-            this.selectedImage = images[0];
-            ViewImage();
-        }
-
-        private void ViewImage()
-        {
-            panel1.Controls.Clear();
-            ReScale();
-            panel1.Controls.Add(form1.CreatePictureBox(selectedImage, GetCenter()));
-        }
-
-        private void ReScale()
-        {
-            if (selectedImage.Width > this.Width)
+            if (images.Length > 0)
             {
-                panel1.Size = selectedImage.Size;
-                this.Size = panel1.Size;
-                this.Height += 200;
+                selectedImage = 0;
+                pictureBox = form1.CreatePictureBox(images[selectedImage]);
+                this.Controls.Add(pictureBox);
+                Scale();
+            }
+        }
+
+        public void ImageUpdate(bool flag)
+        {
+            if (!flag)
+            {
+                selectedImage = selectedImage >=  images.Length - 1 ? 0 : selectedImage + 1;
             }
             else
             {
-                panel1.Size = new Size(this.Width, this.Height - 300);
+                selectedImage = selectedImage <= 0 ? images.Length - 1 : selectedImage - 1;
             }
+            pictureBox.Image = images[selectedImage];
+            Scale();
         }
 
-        private Point GetCenter()
+        public void Scale()
         {
-            return new Point((panel1.Width / 2) - (selectedImage.Width / 2), (panel1.Height / 2) - (selectedImage.Height / 2));
-        }
-
-        private void Form2_Resize(object sender, EventArgs e)
-        {
-            if (panel1.Controls.Count > 0)
+            pictureBox.Size = pictureBox.Image.Size;
+            if (640000 < (int)Math.Pow(pictureBox.Size.Width, 2))
             {
-                ReScale();
-                ((PictureBox)panel1.Controls[0]).Location = GetCenter();
+                this.Size = pictureBox.Size;
+                pictureBox.Location = new Point(0, 0);
             }
-        }
-
-        private void NextImage(object sender, EventArgs e)
-        {
-            int index = Array.FindIndex(images, (image) => image == selectedImage);
-            index++;
-            index = images.Length == index ? 0 : index;
-            selectedImage = images[index];
-            ViewImage();
-        }
-        private void PreviousImage(object sender, EventArgs e)
-        {
-            int index = Array.FindIndex(images, (image) => image == selectedImage);
-            index--;
-            index = index == -1 ? images.Length - 1 : index;
-            selectedImage = images[index];
-            ViewImage();
+            else
+            {
+                this.Size = new Size(800, 800);
+                pictureBox.Location = new Point(this.Width / 2 - pictureBox.Width / 2, this.Height / 2 - pictureBox.Height / 2);
+            }
         }
 
         Image[] images;
-        Image selectedImage;
+        public int selectedImage;
+        public PictureBox pictureBox;
         Form1 form1;
     }
 }

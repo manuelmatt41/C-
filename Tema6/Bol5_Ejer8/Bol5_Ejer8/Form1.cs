@@ -26,17 +26,7 @@ namespace Bol5_Ejer8
             p.Image = image;
             p.Anchor = AnchorStyles.None;
             p.Visible = true;
-            return p;
-        }
-        public PictureBox CreatePictureBox(Image image, Point location)
-        {
-            PictureBox p = new PictureBox();
-            p.SizeMode = PictureBoxSizeMode.StretchImage;
-            p.Size = image.Size;
-            p.Image = image;
-            p.Location = location;
-            p.Anchor = AnchorStyles.None;
-            p.Visible = true;
+            p.Click += new EventHandler(OpenGallery);
             return p;
         }
 
@@ -53,6 +43,7 @@ namespace Bol5_Ejer8
                 return new Image[0];
             }
             Array.ForEach(imagesPath, (imagePath) => images.Add(Image.FromFile(imagePath.FullName)));
+            imagesFiles = imagesPath;
             return images.ToArray();
         }
 
@@ -61,18 +52,77 @@ namespace Bol5_Ejer8
             return Array.FindAll(directoryInfo.GetFiles(), (file) => extensions.Contains(file.Extension));
         }
 
-        private void Form1_Resize(object sender, EventArgs e)
+        private void OpenGallery(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Size = this.Size;
+            if (sender == button1)
+            {
+                images = GetImages(folderBrowserDialog1.SelectedPath);
+                form2 = new Form2(images, this);
+                form2.Show();
+                form2.Text = imagesFiles[form2.selectedImage].Name;
+            }
+            else
+            {
+                for (int i = 0; i < flowLayoutPanel1.Controls.Count; i++)
+                {
+                    if (sender == flowLayoutPanel1.Controls[i])
+                    {
+                        form2.pictureBox.Image = ((PictureBox)flowLayoutPanel1.Controls[i]).Image;
+                        form2.selectedImage = i;
+                        form2.Scale();
+                        form2.Text = imagesFiles[form2.selectedImage].Name;
+                    }
+                }
+            }
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SelectImageFile(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowDialog();
-            AddPictureBox(flowLayoutPanel1, GetImages(folderBrowserDialog1.SelectedPath)); 
-            flowLayoutPanel1.Size = this.Size;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            new Form2(GetImages(folderBrowserDialog1.SelectedPath), this).ShowDialog();
+            AddPictureBox(flowLayoutPanel1, GetImages(folderBrowserDialog1.SelectedPath));
+            flowLayoutPanel1.Size = new Size(this.Size.Width, this.Height - 40);
+            flowLayoutPanel1.Location = new Point(0, 40);
+            OpenGallery(sender, e);
         }
+
+        private void ChangeImage(object sender, EventArgs e)
+        {
+            if (form2 != null)
+            {
+                if (sender == button2)
+                {
+                    form2.ImageUpdate(true);
+                }
+                else
+                {
+                    form2.ImageUpdate(false);
+                }
+                form2.Text = imagesFiles[form2.selectedImage].Name;
+            }
+        }
+
+        private void ChangeImage(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left)
+            {
+                button2.PerformClick();
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                button2.PerformClick();
+            }
+        }
+
+        private void ScaleGallery(object sender, EventArgs e)
+        {
+            if (flowLayoutPanel1 != null)
+            {
+                flowLayoutPanel1.Size = new Size(this.Size.Width, this.Height - 40);
+            }
+        }
+
+        Form2 form2;
+        FileInfo[] imagesFiles;
+        Image[] images;
     }
 }
