@@ -59,6 +59,8 @@
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -98,12 +100,14 @@
             this.saveFileMenu.Name = "saveFileMenu";
             this.saveFileMenu.Size = new System.Drawing.Size(157, 22);
             this.saveFileMenu.Text = "Save File";
+            this.saveFileMenu.Click += new System.EventHandler(this.SaveDocument);
             // 
             // openFileMenu
             // 
             this.openFileMenu.Name = "openFileMenu";
             this.openFileMenu.Size = new System.Drawing.Size(157, 22);
             this.openFileMenu.Text = "Open File";
+            this.openFileMenu.Click += new System.EventHandler(this.OpenDocument);
             // 
             // recentFilesMenu
             // 
@@ -133,37 +137,38 @@
             // undoMenu
             // 
             this.undoMenu.Name = "undoMenu";
-            this.undoMenu.Size = new System.Drawing.Size(171, 22);
+            this.undoMenu.Size = new System.Drawing.Size(180, 22);
             this.undoMenu.Text = "Undo";
             // 
             // copyMenu
             // 
             this.copyMenu.Name = "copyMenu";
-            this.copyMenu.Size = new System.Drawing.Size(171, 22);
+            this.copyMenu.Size = new System.Drawing.Size(180, 22);
             this.copyMenu.Text = "Copy";
             // 
             // cutMenu
             // 
             this.cutMenu.Name = "cutMenu";
-            this.cutMenu.Size = new System.Drawing.Size(171, 22);
+            this.cutMenu.Size = new System.Drawing.Size(180, 22);
             this.cutMenu.Text = "Cut";
+            this.cutMenu.Click += new System.EventHandler(this.Cut);
             // 
             // pasteMenu
             // 
             this.pasteMenu.Name = "pasteMenu";
-            this.pasteMenu.Size = new System.Drawing.Size(171, 22);
+            this.pasteMenu.Size = new System.Drawing.Size(180, 22);
             this.pasteMenu.Text = "Paste";
             // 
             // selectAllMenu
             // 
             this.selectAllMenu.Name = "selectAllMenu";
-            this.selectAllMenu.Size = new System.Drawing.Size(171, 22);
+            this.selectAllMenu.Size = new System.Drawing.Size(180, 22);
             this.selectAllMenu.Text = "Select All";
             // 
             // selectInformationMenu
             // 
             this.selectInformationMenu.Name = "selectInformationMenu";
-            this.selectInformationMenu.Size = new System.Drawing.Size(171, 22);
+            this.selectInformationMenu.Size = new System.Drawing.Size(180, 22);
             this.selectInformationMenu.Text = "Select information";
             // 
             // toolsMenu
@@ -229,7 +234,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Bol5_Ejer7.Properties.Resources.outline_note_add_black_24dp;
+            this.toolStripButton1.Image = global::Bol5_Ejer9.Properties.Resources.outline_note_add_black_24dp;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
@@ -238,7 +243,7 @@
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::Bol5_Ejer7.Properties.Resources.outline_save_black_24dp;
+            this.toolStripButton2.Image = global::Bol5_Ejer9.Properties.Resources.outline_save_black_24dp;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
@@ -247,7 +252,7 @@
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::Bol5_Ejer7.Properties.Resources.outline_folder_open_black_24dp;
+            this.toolStripButton3.Image = global::Bol5_Ejer9.Properties.Resources.outline_folder_open_black_24dp;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
@@ -261,7 +266,7 @@
             // toolStripButton4
             // 
             this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::Bol5_Ejer7.Properties.Resources.outline_undo_black_24dp;
+            this.toolStripButton4.Image = global::Bol5_Ejer9.Properties.Resources.outline_undo_black_24dp;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
@@ -270,7 +275,7 @@
             // toolStripButton5
             // 
             this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = global::Bol5_Ejer7.Properties.Resources.outline_content_copy_black_24dp;
+            this.toolStripButton5.Image = global::Bol5_Ejer9.Properties.Resources.outline_content_copy_black_24dp;
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
@@ -279,7 +284,7 @@
             // toolStripButton6
             // 
             this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = global::Bol5_Ejer7.Properties.Resources.outline_content_cut_black_24dp;
+            this.toolStripButton6.Image = global::Bol5_Ejer9.Properties.Resources.outline_content_cut_black_24dp;
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
@@ -288,7 +293,7 @@
             // toolStripButton7
             // 
             this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Image = global::Bol5_Ejer7.Properties.Resources.outline_content_paste_black_24dp;
+            this.toolStripButton7.Image = global::Bol5_Ejer9.Properties.Resources.outline_content_paste_black_24dp;
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.Size = new System.Drawing.Size(23, 22);
@@ -297,7 +302,7 @@
             // toolStripButton8
             // 
             this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton8.Image = global::Bol5_Ejer7.Properties.Resources.outline_select_all_black_24dp;
+            this.toolStripButton8.Image = global::Bol5_Ejer9.Properties.Resources.outline_select_all_black_24dp;
             this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton8.Name = "toolStripButton8";
             this.toolStripButton8.Size = new System.Drawing.Size(23, 22);
@@ -311,6 +316,16 @@
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 2;
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "txt";
+            this.saveFileDialog1.InitialDirectory = "c:\\";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "txt files |*.txt, *.ini, *.java, *.cs, *.py, *.html";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -322,7 +337,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Resize += new System.EventHandler(this.Form1_Resize);
+            this.Resize += new System.EventHandler(this.ResizeDocument);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -365,5 +380,7 @@
         private ToolStripButton toolStripButton7;
         private ToolStripButton toolStripButton8;
         private TextBox textBox1;
+        private SaveFileDialog saveFileDialog1;
+        private OpenFileDialog openFileDialog1;
     }
 }
