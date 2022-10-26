@@ -49,6 +49,8 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.button1.MouseEnter += new System.EventHandler(this.Enter);
+            this.button1.MouseLeave += new System.EventHandler(this.Exit);
             // 
             // textBox1
             // 
@@ -92,6 +94,8 @@
             this.button2.Text = "Color";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.Enter);
+            this.button2.MouseLeave += new System.EventHandler(this.Exit);
             // 
             // textBox4
             // 
@@ -111,6 +115,8 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             this.button3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.button3.MouseEnter += new System.EventHandler(this.Enter);
+            this.button3.MouseLeave += new System.EventHandler(this.Exit);
             // 
             // label1
             // 
@@ -121,8 +127,10 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.button2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
@@ -135,6 +143,7 @@
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Bol5_Ejer2";
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);

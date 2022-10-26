@@ -1,4 +1,4 @@
-//#define FLAG
+#define FLAG
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -51,7 +51,7 @@ namespace Bol5_Ejer1
         {
             if (e.Button == MouseButtons.Left)
             {
-                button1.BackColor = Color.FromArgb(-986896);
+                button1.BackColor = Color.FromArgb(-986896);  //0xFF0D34
             }
             if (e.Button == MouseButtons.Right)
             {
@@ -63,20 +63,34 @@ namespace Bol5_Ejer1
                 button2.BackColor = Color.FromArgb(-986896);
             }
         }
+
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
+#if FLAG
             if (e.KeyCode != Keys.Escape)
             {
-#if FLAG
-                this.Text = e.KeyData.ToString();
-#else
-                this.Text = e.
-#endif
+                this.Text = e.KeyCode.ToString();
             }
             else
             {
                 this.Text = "Mouse Tester";
             }
+#endif
+        }
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+#if !FLAG
+            this.Text = e.KeyChar.ToString();
+#endif
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Are yo sure to close the app?", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+            {
+                this.Dispose();
+            }
+            e.Cancel = true;
         }
     }
 }

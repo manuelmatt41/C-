@@ -45,6 +45,9 @@
             this.toolsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.wordWrapMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.writeModeMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.uppercaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lowercaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.normalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textColorMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundColor = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,6 +76,7 @@
             this.toolsMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -92,33 +96,34 @@
             // newDocumentMenu
             // 
             this.newDocumentMenu.Name = "newDocumentMenu";
-            this.newDocumentMenu.Size = new System.Drawing.Size(157, 22);
+            this.newDocumentMenu.Size = new System.Drawing.Size(180, 22);
             this.newDocumentMenu.Text = "New Document";
+            this.newDocumentMenu.Click += new System.EventHandler(this.NewDocument);
             // 
             // saveFileMenu
             // 
             this.saveFileMenu.Name = "saveFileMenu";
-            this.saveFileMenu.Size = new System.Drawing.Size(157, 22);
+            this.saveFileMenu.Size = new System.Drawing.Size(180, 22);
             this.saveFileMenu.Text = "Save File";
             this.saveFileMenu.Click += new System.EventHandler(this.SaveDocument);
             // 
             // openFileMenu
             // 
             this.openFileMenu.Name = "openFileMenu";
-            this.openFileMenu.Size = new System.Drawing.Size(157, 22);
+            this.openFileMenu.Size = new System.Drawing.Size(180, 22);
             this.openFileMenu.Text = "Open File";
             this.openFileMenu.Click += new System.EventHandler(this.OpenDocument);
             // 
             // recentFilesMenu
             // 
             this.recentFilesMenu.Name = "recentFilesMenu";
-            this.recentFilesMenu.Size = new System.Drawing.Size(157, 22);
+            this.recentFilesMenu.Size = new System.Drawing.Size(180, 22);
             this.recentFilesMenu.Text = "Recent Files";
             // 
             // exitMenu
             // 
             this.exitMenu.Name = "exitMenu";
-            this.exitMenu.Size = new System.Drawing.Size(157, 22);
+            this.exitMenu.Size = new System.Drawing.Size(180, 22);
             this.exitMenu.Text = "Exit";
             // 
             // editMenu
@@ -137,38 +142,37 @@
             // undoMenu
             // 
             this.undoMenu.Name = "undoMenu";
-            this.undoMenu.Size = new System.Drawing.Size(180, 22);
+            this.undoMenu.Size = new System.Drawing.Size(171, 22);
             this.undoMenu.Text = "Undo";
             // 
             // copyMenu
             // 
             this.copyMenu.Name = "copyMenu";
-            this.copyMenu.Size = new System.Drawing.Size(180, 22);
+            this.copyMenu.Size = new System.Drawing.Size(171, 22);
             this.copyMenu.Text = "Copy";
             // 
             // cutMenu
             // 
             this.cutMenu.Name = "cutMenu";
-            this.cutMenu.Size = new System.Drawing.Size(180, 22);
+            this.cutMenu.Size = new System.Drawing.Size(171, 22);
             this.cutMenu.Text = "Cut";
-            this.cutMenu.Click += new System.EventHandler(this.Cut);
             // 
             // pasteMenu
             // 
             this.pasteMenu.Name = "pasteMenu";
-            this.pasteMenu.Size = new System.Drawing.Size(180, 22);
+            this.pasteMenu.Size = new System.Drawing.Size(171, 22);
             this.pasteMenu.Text = "Paste";
             // 
             // selectAllMenu
             // 
             this.selectAllMenu.Name = "selectAllMenu";
-            this.selectAllMenu.Size = new System.Drawing.Size(180, 22);
+            this.selectAllMenu.Size = new System.Drawing.Size(171, 22);
             this.selectAllMenu.Text = "Select All";
             // 
             // selectInformationMenu
             // 
             this.selectInformationMenu.Name = "selectInformationMenu";
-            this.selectInformationMenu.Size = new System.Drawing.Size(180, 22);
+            this.selectInformationMenu.Size = new System.Drawing.Size(171, 22);
             this.selectInformationMenu.Text = "Select information";
             // 
             // toolsMenu
@@ -185,15 +189,43 @@
             // 
             // wordWrapMenu
             // 
+            this.wordWrapMenu.CheckOnClick = true;
             this.wordWrapMenu.Name = "wordWrapMenu";
             this.wordWrapMenu.Size = new System.Drawing.Size(170, 22);
             this.wordWrapMenu.Text = "WordWrap";
             // 
             // writeModeMenu
             // 
+            this.writeModeMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uppercaseToolStripMenuItem,
+            this.lowercaseToolStripMenuItem,
+            this.normalToolStripMenuItem});
             this.writeModeMenu.Name = "writeModeMenu";
             this.writeModeMenu.Size = new System.Drawing.Size(170, 22);
             this.writeModeMenu.Text = "Write Mode";
+            // 
+            // uppercaseToolStripMenuItem
+            // 
+            this.uppercaseToolStripMenuItem.CheckOnClick = true;
+            this.uppercaseToolStripMenuItem.Name = "uppercaseToolStripMenuItem";
+            this.uppercaseToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.uppercaseToolStripMenuItem.Text = "Uppercase";
+            // 
+            // lowercaseToolStripMenuItem
+            // 
+            this.lowercaseToolStripMenuItem.CheckOnClick = true;
+            this.lowercaseToolStripMenuItem.Name = "lowercaseToolStripMenuItem";
+            this.lowercaseToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.lowercaseToolStripMenuItem.Text = "Lowercase";
+            // 
+            // normalToolStripMenuItem
+            // 
+            this.normalToolStripMenuItem.Checked = true;
+            this.normalToolStripMenuItem.CheckOnClick = true;
+            this.normalToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
+            this.normalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.normalToolStripMenuItem.Text = "Normal";
             // 
             // textColorMenu
             // 
@@ -215,6 +247,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
@@ -227,6 +260,7 @@
             this.toolStripButton8});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
@@ -337,7 +371,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Resize += new System.EventHandler(this.ResizeDocument);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -382,5 +415,8 @@
         private TextBox textBox1;
         private SaveFileDialog saveFileDialog1;
         private OpenFileDialog openFileDialog1;
+        private ToolStripMenuItem uppercaseToolStripMenuItem;
+        private ToolStripMenuItem lowercaseToolStripMenuItem;
+        private ToolStripMenuItem normalToolStripMenuItem;
     }
 }
