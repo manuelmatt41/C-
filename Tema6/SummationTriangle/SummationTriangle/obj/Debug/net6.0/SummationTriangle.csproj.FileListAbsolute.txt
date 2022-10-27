@@ -1,0 +1,15 @@
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\bin\Debug\net6.0\SummationTriangle.exe
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\bin\Debug\net6.0\SummationTriangle.deps.json
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\bin\Debug\net6.0\SummationTriangle.runtimeconfig.json
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\bin\Debug\net6.0\SummationTriangle.dll
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\bin\Debug\net6.0\SummationTriangle.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.csproj.AssemblyReference.cache
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.AssemblyInfoInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.AssemblyInfo.cs
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.dll
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\refint\SummationTriangle.dll
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\SummationTriangle.genruntimeconfig.cache
+C:\Users\Manuel Marín\Documents\C-\Tema6\SummationTriangle\SummationTriangle\obj\Debug\net6.0\ref\SummationTriangle.dll

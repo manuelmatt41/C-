@@ -49,7 +49,7 @@
             this.lowercaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.normalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textColorMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.backgroundColor = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundColorMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -96,34 +96,34 @@
             // newDocumentMenu
             // 
             this.newDocumentMenu.Name = "newDocumentMenu";
-            this.newDocumentMenu.Size = new System.Drawing.Size(180, 22);
+            this.newDocumentMenu.Size = new System.Drawing.Size(157, 22);
             this.newDocumentMenu.Text = "New Document";
             this.newDocumentMenu.Click += new System.EventHandler(this.NewDocument);
             // 
             // saveFileMenu
             // 
             this.saveFileMenu.Name = "saveFileMenu";
-            this.saveFileMenu.Size = new System.Drawing.Size(180, 22);
+            this.saveFileMenu.Size = new System.Drawing.Size(157, 22);
             this.saveFileMenu.Text = "Save File";
             this.saveFileMenu.Click += new System.EventHandler(this.SaveDocument);
             // 
             // openFileMenu
             // 
             this.openFileMenu.Name = "openFileMenu";
-            this.openFileMenu.Size = new System.Drawing.Size(180, 22);
+            this.openFileMenu.Size = new System.Drawing.Size(157, 22);
             this.openFileMenu.Text = "Open File";
             this.openFileMenu.Click += new System.EventHandler(this.OpenDocument);
             // 
             // recentFilesMenu
             // 
             this.recentFilesMenu.Name = "recentFilesMenu";
-            this.recentFilesMenu.Size = new System.Drawing.Size(180, 22);
+            this.recentFilesMenu.Size = new System.Drawing.Size(157, 22);
             this.recentFilesMenu.Text = "Recent Files";
             // 
             // exitMenu
             // 
             this.exitMenu.Name = "exitMenu";
-            this.exitMenu.Size = new System.Drawing.Size(180, 22);
+            this.exitMenu.Size = new System.Drawing.Size(157, 22);
             this.exitMenu.Text = "Exit";
             // 
             // editMenu
@@ -181,7 +181,7 @@
             this.wordWrapMenu,
             this.writeModeMenu,
             this.textColorMenu,
-            this.backgroundColor,
+            this.backgroundColorMenu,
             this.aboutMenu});
             this.toolsMenu.Name = "toolsMenu";
             this.toolsMenu.Size = new System.Drawing.Size(46, 20);
@@ -220,9 +220,7 @@
             // 
             // normalToolStripMenuItem
             // 
-            this.normalToolStripMenuItem.Checked = true;
             this.normalToolStripMenuItem.CheckOnClick = true;
-            this.normalToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
             this.normalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.normalToolStripMenuItem.Text = "Normal";
@@ -235,9 +233,9 @@
             // 
             // backgroundColor
             // 
-            this.backgroundColor.Name = "backgroundColor";
-            this.backgroundColor.Size = new System.Drawing.Size(170, 22);
-            this.backgroundColor.Text = "Background Color";
+            this.backgroundColorMenu.Name = "backgroundColor";
+            this.backgroundColorMenu.Size = new System.Drawing.Size(170, 22);
+            this.backgroundColorMenu.Text = "Background Color";
             // 
             // aboutMenu
             // 
@@ -371,6 +369,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -400,7 +399,7 @@
         private ToolStripMenuItem wordWrapMenu;
         private ToolStripMenuItem writeModeMenu;
         private ToolStripMenuItem textColorMenu;
-        private ToolStripMenuItem backgroundColor;
+        private ToolStripMenuItem backgroundColorMenu;
         private ToolStripMenuItem aboutMenu;
         private ToolStrip toolStrip1;
         private ToolStripButton toolStripButton1;
