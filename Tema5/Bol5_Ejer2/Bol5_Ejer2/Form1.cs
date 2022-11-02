@@ -38,17 +38,14 @@ namespace Bol5_Ejer2
             label1.Update();
         }
 
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                    button3.PerformClick();
-            }
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             string path = textBox4.Text.Trim();
+            if (path == "")
+            {
+                MessageBox.Show("Nothing has been written", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
             try
             {
                 label1.Image = Image.FromFile(path);
@@ -75,6 +72,18 @@ namespace Bol5_Ejer2
         private void Exit(object sender, EventArgs e)
         {
             ((Button)sender).BackColor = Button.DefaultBackColor;
+        }
+
+        private void ChangeAcceptButton(object sender, EventArgs e)
+        {
+            if (textBox4.Focused)
+            {
+                this.AcceptButton = button3;
+            }
+            else
+            {
+                this.AcceptButton = button2;
+            }
         }
     }
 }

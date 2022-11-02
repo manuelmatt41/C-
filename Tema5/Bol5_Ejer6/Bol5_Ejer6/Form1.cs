@@ -52,7 +52,7 @@ namespace Bol5_Ejer6
         {
             if (((Button)sender).BackColor != Color.Red)
             {
-                ((Button)sender).BackColor = Color.FromArgb(-986896);
+                ((Button)sender).BackColor = DefaultBackColor;
             }
         }
 
@@ -63,7 +63,7 @@ namespace Bol5_Ejer6
             {
                 if (this.Controls[i] is Button)
                 {
-                    ((Button)this.Controls[i]).BackColor = Color.FromArgb(-986896);
+                    ((Button)this.Controls[i]).BackColor = DefaultBackColor;
                 }
             }
         }
@@ -74,7 +74,7 @@ namespace Bol5_Ejer6
         {
             Environment.Exit(0);
         }
-
+            
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             button1.PerformClick();

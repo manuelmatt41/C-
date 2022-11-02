@@ -12,6 +12,7 @@ public class Form2 : Form
         {
             pictureBox1.Image = Image.FromStream(openFileDialog1.OpenFile());
             this.Size = pictureBox1.Size;
+            this.Text = openFileDialog1.SafeFileName;
         }
     }
 
@@ -31,7 +32,7 @@ public class Form2 : Form
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(285, 263);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -44,15 +45,9 @@ public class Form2 : Form
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
-            this.Resize += new System.EventHandler(this.Form2_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 	}
 
-    private void Form2_Resize(object sender, EventArgs e)
-    {
-        pictureBox1.Image = (Image)new Bitmap(pictureBox1.Image, this.Size);
-    }
 }

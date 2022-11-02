@@ -20,14 +20,6 @@ namespace Bol5_Ejer5._1
             UpdateLabel();
         }
 
-        private void Form1_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                button1.PerformClick();
-            }
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             RemoveSelectedItems(listBox1, "There are no values to remove");
@@ -96,7 +88,7 @@ namespace Bol5_Ejer5._1
             string list = "";
             for (int i = 0; i < listBox1.SelectedIndices.Count; i++)
             {
-                list += $"Selected: {listBox1.SelectedIndices[i]} {listBox1.Items[i]}{Environment.NewLine}";
+                list += $"Selected: {listBox1.SelectedIndices[i]} {listBox1.Items[listBox1.SelectedIndices[i]]}{Environment.NewLine}";
             }
             label2.Text = list;
         }

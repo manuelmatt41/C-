@@ -45,14 +45,21 @@ namespace Bol5_Ejer4
                             label2.Text = (n1 / n2).ToString();
                         }
                         break;
-                    default:
-                        break;
                 }
+            }
+            else
+            {
+                MessageBox.Show("Yo can only write numbers", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
             executions[option].Invoke();
+        }
+
+        private void TextChange(object sender, EventArgs e)
+        {
+            ((TextBox)sender).BackColor = int.TryParse(((TextBox)sender).Text, out int a) ? Color.White : Color.Red;
         }
 
         enum Operators

@@ -16,3 +16,21 @@ C:\Users\manue\source\repos\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_
 C:\Users\manue\source\repos\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.genruntimeconfig.cache
 C:\Users\manue\source\repos\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\ref\Bol5_Ejer3.dll
 C:\Users\manue\source\repos\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Form2.resources
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\bin\Debug\net6.0-windows\Bol5_Ejer3.exe
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\bin\Debug\net6.0-windows\Bol5_Ejer3.deps.json
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\bin\Debug\net6.0-windows\Bol5_Ejer3.runtimeconfig.json
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\bin\Debug\net6.0-windows\Bol5_Ejer3.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\bin\Debug\net6.0-windows\Bol5_Ejer3.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.csproj.AssemblyReference.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.Form1.resources
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Form2.resources
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.csproj.GenerateResource.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.AssemblyInfoInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.AssemblyInfo.cs
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\refint\Bol5_Ejer3.dll
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.pdb
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\Bol5_Ejer3.genruntimeconfig.cache
+C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer3\Bol5_Ejer3\obj\Debug\net6.0-windows\ref\Bol5_Ejer3.dll

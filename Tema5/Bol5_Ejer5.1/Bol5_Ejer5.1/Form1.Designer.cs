@@ -53,7 +53,6 @@
             this.listBox1.TabIndex = 0;
             this.toolTip1.SetToolTip(this.listBox1, "List of main elements");
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            this.listBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
             // listBox2
             // 
@@ -63,7 +62,6 @@
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(224, 94);
             this.listBox2.TabIndex = 1;
-            this.listBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
             // button1
             // 
@@ -115,7 +113,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(129, 23);
             this.textBox1.TabIndex = 6;
-            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
             // label1
             // 
@@ -141,6 +138,7 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 182);

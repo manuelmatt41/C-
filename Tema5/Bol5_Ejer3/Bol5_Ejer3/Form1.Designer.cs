@@ -51,6 +51,7 @@
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Modal";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.ChangeColor);
             // 
             // Form1
             // 
@@ -60,7 +61,8 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Bol5_Ejer3";
+            this.Text = "Visor imagenes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Closing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

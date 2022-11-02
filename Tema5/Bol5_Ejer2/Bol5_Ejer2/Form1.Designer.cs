@@ -48,7 +48,6 @@
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.button1.MouseEnter += new System.EventHandler(this.Enter);
             this.button1.MouseLeave += new System.EventHandler(this.Exit);
             // 
@@ -61,7 +60,7 @@
             this.textBox1.PlaceholderText = "Red (0 - 255)";
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 1;
-            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.textBox1.Enter += new System.EventHandler(this.ChangeAcceptButton);
             // 
             // textBox2
             // 
@@ -72,7 +71,7 @@
             this.textBox2.PlaceholderText = "Green (0 - 255)";
             this.textBox2.Size = new System.Drawing.Size(100, 23);
             this.textBox2.TabIndex = 2;
-            this.textBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.textBox2.Enter += new System.EventHandler(this.ChangeAcceptButton);
             // 
             // textBox3
             // 
@@ -83,7 +82,7 @@
             this.textBox3.PlaceholderText = "Blue (0 - 255)";
             this.textBox3.Size = new System.Drawing.Size(100, 23);
             this.textBox3.TabIndex = 3;
-            this.textBox3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.textBox3.Enter += new System.EventHandler(this.ChangeAcceptButton);
             // 
             // button2
             // 
@@ -103,7 +102,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 23);
             this.textBox4.TabIndex = 5;
-            this.textBox4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.textBox4.Enter += new System.EventHandler(this.ChangeAcceptButton);
             // 
             // button3
             // 
@@ -114,7 +113,6 @@
             this.button3.Text = "Render image";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.button3.MouseEnter += new System.EventHandler(this.Enter);
             this.button3.MouseLeave += new System.EventHandler(this.Exit);
             // 
@@ -127,7 +125,6 @@
             // 
             // Form1
             // 
-            this.AcceptButton = this.button2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button1;
@@ -146,7 +143,6 @@
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Bol5_Ejer2";
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
