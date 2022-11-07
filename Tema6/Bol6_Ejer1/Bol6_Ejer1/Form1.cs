@@ -14,6 +14,8 @@ namespace Bol6_Ejer1
             string? directory = textBox1.Text.Trim();
             if (directory.StartsWith("%") && directory.EndsWith("%"))
             {
+                directory = directory.Remove(0, 1);
+                directory = directory.Remove(directory.Length - 1, 1);
                 directory = Environment.GetEnvironmentVariable(directory);
                 directoryInfo = directory != null ? new DirectoryInfo(directory) : null;
             }
@@ -35,6 +37,7 @@ namespace Bol6_Ejer1
         {
             if (directoryInfo != null)
             {
+                lblError.Text = "";
                 string[] directories;
                 try
                 {
@@ -54,6 +57,10 @@ namespace Bol6_Ejer1
                     }
                     UpdateFileInfo();
                 }
+            }
+            else
+            {
+                lblError.Text = "Directory not found";
             }
         }
 
@@ -97,7 +104,18 @@ namespace Bol6_Ejer1
             FileInfo? fileInfo = new FileInfo((string)listBox2.SelectedItem);
             if (fileInfo != null)
             {
-                label1.Text = $"{fileInfo.Length} Bytes";
+                switch (fileInfo.Length)
+                {
+                    case < 1024:
+                        label1.Text = $"{fileInfo.Length} Bytes";
+                        break;
+                    case < 1000000:
+                        label1.Text = $"{fileInfo.Length / 1024} MB";
+                        break;
+                    default:
+                        label1.Text = $"{(fileInfo.Length / 1024) / 1024} GB";
+                        break;
+                }
                 if (fileInfo.Extension == ".txt")
                 {
                     new Form2(File.ReadAllText(fileInfo.FullName), fileInfo.FullName).Show();

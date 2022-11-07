@@ -33,6 +33,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -83,11 +84,22 @@
             this.label1.TabIndex = 6;
             this.label1.Text = " ";
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblError.Location = new System.Drawing.Point(299, 16);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 15);
+            this.lblError.TabIndex = 7;
+            // 
             // Form1
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 319);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
@@ -109,5 +121,6 @@
         private ListBox listBox1;
         private ListBox listBox2;
         private Label label1;
+        private Label lblError;
     }
 }
