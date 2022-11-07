@@ -76,7 +76,7 @@ namespace Bol5_Ejer2
 
         private void ChangeAcceptButton(object sender, EventArgs e)
         {
-            if (textBox4.Focused)
+            if (sender == textBox4)
             {
                 this.AcceptButton = button3;
             }

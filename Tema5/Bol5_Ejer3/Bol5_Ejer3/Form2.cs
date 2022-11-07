@@ -5,19 +5,30 @@ public class Form2 : Form
     private OpenFileDialog openFileDialog1;
     private PictureBox pictureBox1;
 
-	public Form2()
-	{
+    public Form2()
+    {
         InitializeComponent();
         if (openFileDialog1.ShowDialog() == DialogResult.OK)
         {
-            pictureBox1.Image = Image.FromStream(openFileDialog1.OpenFile());
-            this.Size = pictureBox1.Size;
-            this.Text = openFileDialog1.SafeFileName;
+            try
+            {
+                pictureBox1.Image = Image.FromStream(openFileDialog1.OpenFile());
+                this.Size = pictureBox1.Size;
+                this.Text = openFileDialog1.SafeFileName;
+            }
+            catch (ArgumentException)
+            {
+                this.Text = "The file is not an image";
+            }
+        }
+        else
+        {
+            this.Text = "Nothing has been selected";
         }
     }
 
-	private void InitializeComponent()
-	{
+    private void InitializeComponent()
+    {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -38,7 +49,7 @@ public class Form2 : Form
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Imagenes JPG|*.jpg|Imagenes PNG|*.png|Todos los archivos|*.*";
             // 
             // Form2
             // 
@@ -48,6 +59,6 @@ public class Form2 : Form
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
-	}
+    }
 
 }

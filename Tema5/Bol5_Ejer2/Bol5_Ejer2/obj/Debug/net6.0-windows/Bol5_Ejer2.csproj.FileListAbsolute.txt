@@ -32,3 +32,20 @@ C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0
 C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.pdb
 C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.genruntimeconfig.cache
 C:\Users\Manuel Marín\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\ref\Bol5_Ejer2.dll
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\bin\Debug\net6.0-windows\Bol5_Ejer2.exe
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\bin\Debug\net6.0-windows\Bol5_Ejer2.deps.json
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\bin\Debug\net6.0-windows\Bol5_Ejer2.runtimeconfig.json
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\bin\Debug\net6.0-windows\Bol5_Ejer2.dll
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\bin\Debug\net6.0-windows\Bol5_Ejer2.pdb
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.csproj.AssemblyReference.cache
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.Form1.resources
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.csproj.GenerateResource.cache
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.AssemblyInfoInputs.cache
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.AssemblyInfo.cs
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.csproj.CoreCompileInputs.cache
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.dll
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\refint\Bol5_Ejer2.dll
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.pdb
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\Bol5_Ejer2.genruntimeconfig.cache
+C:\Users\Manu\Documents\C-\Tema5\Bol5_Ejer2\Bol5_Ejer2\obj\Debug\net6.0-windows\ref\Bol5_Ejer2.dll
