@@ -8,7 +8,7 @@ namespace bol6_ejer3
     {
         public InterfazUsuario()
         {
-            gestorPersona = new GestorPersona();
+            GestorPersona = new GestorPersona();
         }
 
         private void Add(int type)
@@ -18,12 +18,12 @@ namespace bol6_ejer3
                 case 0:
                     Empleado e = new Empleado();
                     e.PedirDatos();
-                    gestorPersona.Workers.Insert(gestorPersona.Posicion(e.Edad) != -1 ? gestorPersona.Posicion(e.Edad) : gestorPersona.Workers.Count, e);
+                    GestorPersona.Workers.Insert(GestorPersona.Posicion(e.Edad) != -1 ? GestorPersona.Posicion(e.Edad) : GestorPersona.Workers.Count, e);
                     break;
                 case 1:
                     Directivo d = new Directivo();
                     d.PedirDatos();
-                    gestorPersona.Workers.Insert(gestorPersona.Posicion(d.Edad) != -1 ? gestorPersona.Posicion(d.Edad) : gestorPersona.Workers.Count, d);
+                    GestorPersona.Workers.Insert(GestorPersona.Posicion(d.Edad) != -1 ? GestorPersona.Posicion(d.Edad) : GestorPersona.Workers.Count, d);
                     break;
             }
             //int edad = 20;
@@ -39,7 +39,7 @@ namespace bol6_ejer3
         private void ShowPersons()
         {
             Console.Clear();
-            for (int i = 0; i < gestorPersona.Workers.Count; i++)
+            for (int i = 0; i < GestorPersona.Workers.Count; i++)
             {
                 ShowPerson(i);
             }
@@ -47,8 +47,8 @@ namespace bol6_ejer3
 
         private void ShowPerson(int index)
         {
-            Console.WriteLine($"{(gestorPersona.Workers[index] is Empleado ? "E" : "D")}");
-            Console.WriteLine($"{index + 1,-3} Name: {CutNames(gestorPersona.Workers[index].Nombre, 10),-13} Surname: {CutNames(gestorPersona.Workers[index].Apellidos, 20),-22}");
+            Console.WriteLine($"{(GestorPersona.Workers[index] is Empleado ? "E" : "D")}");
+            Console.WriteLine($"{index + 1,-3} Name: {CutNames(GestorPersona.Workers[index].Nombre, 10),-13} Surname: {CutNames(GestorPersona.Workers[index].Apellidos, 20),-22}");
         }
 
         private string CutNames(string name, int maxCharacters)
@@ -127,7 +127,7 @@ namespace bol6_ejer3
                         Add(selection);
                         break;
                     case 1:
-                        if (gestorPersona.Workers.Count > 1)
+                        if (GestorPersona.Workers.Count > 1)
                         {
 
                             bool flag;
@@ -163,12 +163,12 @@ namespace bol6_ejer3
                                         Console.WriteLine("No se ha escrito bien el maximo");
                                     }
 
-                                    if (max - 1 > gestorPersona.Workers.Count)
+                                    if (max - 1 > GestorPersona.Workers.Count)
                                     {
                                         Console.WriteLine("No existe tantos valores en la lista");
                                     }
-                                } while (!flag || max >= gestorPersona.Workers.Count);
-                            } while (!gestorPersona.Eliminar(max - 1, min - 1));
+                                } while (!flag || max >= GestorPersona.Workers.Count);
+                            } while (!GestorPersona.Eliminar(max - 1, min - 1));
                         }
                         else
                         {
@@ -176,14 +176,14 @@ namespace bol6_ejer3
                         }
                         break;
                     case 2:
-                        if (gestorPersona.Workers.Count > 0)
+                        if (GestorPersona.Workers.Count > 0)
                         {
                             ShowPersons();
                             Console.ReadKey();
                         }
                         break;
                     case 3:
-                        if (gestorPersona.Workers.Count > 0)
+                        if (GestorPersona.Workers.Count > 0)
                         {
                             string apellido;
                             int index;
@@ -192,7 +192,7 @@ namespace bol6_ejer3
                             {
                                 Console.WriteLine("Escribe el indice de la persona que quieres ver");
                                 apellido = Console.ReadLine();
-                                index = gestorPersona.Posicion(apellido);
+                                index = GestorPersona.Posicion(apellido);
 
                                 if (index == -1)
                                 {
@@ -215,10 +215,9 @@ namespace bol6_ejer3
                 option = 0;
 
             } while (selection != options.Length - 1);
-
-            gestorPersona.SaveList();
+            GestorPersona.SaveList();
         }
-        public GestorPersona gestorPersona;
+        public GestorPersona GestorPersona;
     }
 }
 

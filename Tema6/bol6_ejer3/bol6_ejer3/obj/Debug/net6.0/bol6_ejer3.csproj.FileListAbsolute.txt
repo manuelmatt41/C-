@@ -1,0 +1,15 @@
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.csproj.AssemblyReference.cache
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.AssemblyInfoInputs.cache
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.AssemblyInfo.cs
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.csproj.CoreCompileInputs.cache
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\bin\Debug\net6.0\bol6_ejer3.exe
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\bin\Debug\net6.0\bol6_ejer3.deps.json
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\bin\Debug\net6.0\bol6_ejer3.runtimeconfig.json
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\bin\Debug\net6.0\bol6_ejer3.dll
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\bin\Debug\net6.0\bol6_ejer3.pdb
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.dll
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\refint\bol6_ejer3.dll
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.pdb
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\bol6_ejer3.genruntimeconfig.cache
+C:\Users\Manu\Documents\C-\Tema6\bol6_ejer3\bol6_ejer3\obj\Debug\net6.0\ref\bol6_ejer3.dll
