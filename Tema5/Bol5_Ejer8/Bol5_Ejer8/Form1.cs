@@ -30,7 +30,7 @@ namespace Bol5_Ejer8
 
         private void OpenGalleryView()
         {
-            f = new Form2();
+            f = new Form2(this);
             f.Show();
             f.UpdatePictureBox(images[selectedImage], imagesFiles[selectedImage].Name);
             UpdateImageInfo(imagesFiles[selectedImage].Name, imagesFiles[selectedImage].Length, images[selectedImage].Size);
@@ -132,7 +132,7 @@ namespace Bol5_Ejer8
             e.Cancel = true;
         }
 
-        private void CloseImageView(object sender, EventArgs e)
+        public void CloseImageView(object sender, EventArgs e)
         {
             if (f != null)
             {

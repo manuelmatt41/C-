@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bol4_Ejer4;
+using System;
 
 public class Horse
 {
@@ -10,11 +11,10 @@ public class Horse
 
     public void Run()
     {
-        while (!Map.finish)
+        while (!Program.finish)
         {
             Thread.Sleep(new Random().Next(1, 4) * 100);
-
-            lock (Map.l)
+            lock (Program.l)
             {
                 switch (new Random().Next(1, 101))
                 {
@@ -25,8 +25,35 @@ public class Horse
                         position += 2;
                         break;
                 }
+                if (!Program.finish)
+                {
+                    if (!ArriveGoal())
+                    {
+
+                        Console.SetCursorPosition(0, Row);
+                        Console.WriteLine(MAP);
+                        Console.SetCursorPosition(Position, Row);
+                        Console.Write("%");
+                    }
+                    else
+                    {
+                        Program.finish = true;
+                        Console.SetCursorPosition(position + 2, row);
+                        Console.WriteLine("Win horse" + Row);
+                        lock (Program.l)
+                        {
+                            Monitor.Pulse(Program.l);
+                        }
+                    }
+                }
             }
         }
+    }
+
+    private bool ArriveGoal()
+    {
+        return Position >= MAP.Length;
+
     }
 
     private int row;
@@ -50,4 +77,5 @@ public class Horse
             return position;
         }
     }
+    private const string MAP = "-------------------------------------------------------------------------|";
 }
