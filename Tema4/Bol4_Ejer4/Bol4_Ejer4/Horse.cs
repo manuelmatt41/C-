@@ -13,29 +13,25 @@ public class Horse
     {
         while (!Program.finish)
         {
-            Thread.Sleep(new Random().Next(1, 4) * 100);
+            Thread.Sleep(50);// new Random().Next(1, 4) * 100);
             lock (Program.l)
             {
-                switch (new Random().Next(1, 101))
-                {
-                    case <= 75:
-                        position++;
-                        break;
-                    case <= 100:
-                        position += 2;
-                        break;
-                }
                 if (!Program.finish)
                 {
-                    if (!ArriveGoal())
+                    switch (1)//new Random().Next(1, 101))
                     {
-
-                        Console.SetCursorPosition(0, Row);
-                        Console.WriteLine(MAP);
-                        Console.SetCursorPosition(Position, Row);
-                        Console.Write("%");
+                        case <= 75:
+                            position++;
+                            break;
+                        case <= 100:
+                            position += 2;
+                            break;
                     }
-                    else
+                    Console.SetCursorPosition(0, Row);
+                    Console.WriteLine(MAP);
+                    Console.SetCursorPosition(Position, Row);
+                    Console.Write("%");
+                    if (ArriveGoal())
                     {
                         Program.finish = true;
                         Console.SetCursorPosition(position + 2, row);
@@ -45,6 +41,7 @@ public class Horse
                             Monitor.Pulse(Program.l);
                         }
                     }
+
                 }
             }
         }

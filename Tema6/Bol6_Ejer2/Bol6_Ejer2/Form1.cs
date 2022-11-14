@@ -1,4 +1,5 @@
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Bol6_Ejer2
 {
@@ -35,7 +36,7 @@ namespace Bol6_Ejer2
                     new Thread(() =>
                     {
                         Delega d = new Delega(AppendText);
-                        this.Invoke(d, file, CountWords(File.ReadAllText(file)), textBox3);
+                        this.Invoke(d, file, CountWords(File.ReadAllText(file), textBox2.Text), textBox3);
                     }).Start();
                 }
             }
@@ -51,14 +52,9 @@ namespace Bol6_Ejer2
             return File.Exists(path) ? File.ReadAllText(path) : "*.txt";
         }
 
-        private int CountWords(string text)
+        private int CountWords(string text, string word)
         {
-            return Array.FindAll(SeparateWords(text), (word) => word.Equals(textBox2.Text, checkBox1.Checked ? StringComparison.Ordinal : StringComparison.OrdinalIgnoreCase)).Length;
-        }
-
-        private string[] SeparateWords(string text)
-        {
-            return text.Replace('\n', ' ').Replace('\r', ' ').Replace('\t', ' ').Split(' ');
+            return Regex.Matches(text, word, checkBox1.Checked ? RegexOptions.None : RegexOptions.IgnoreCase).Count();
         }
 
         private void AppendText(string path, int countWords, TextBox textBox)
@@ -66,7 +62,7 @@ namespace Bol6_Ejer2
             textBox.AppendText($"{path}: {countWords} words{Environment.NewLine}");
         }
 
-        
+
         delegate void Delega(string path, int countWords, TextBox textBox);
 
     }
