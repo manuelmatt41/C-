@@ -90,7 +90,7 @@ namespace bol6_ejer3
                     {
                         if (Workers[i] is Directivo)
                         {
-                        pr.Write((Directivo)Workers[i]);
+                            pr.Write((Directivo)Workers[i]);
                         }
                     }
                 }
