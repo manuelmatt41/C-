@@ -19,27 +19,30 @@
                     lock (l)
                     {
                         player1RandomNumber = new Random().Next(1, 11);
-                        Console.SetCursorPosition(2, 1);
-                        Console.WriteLine($"Player 1: {player1RandomNumber}");
-
-                        if (player1RandomNumber >= 5 && player1RandomNumber <= 7)
+                        if (!finish)
                         {
-                            points += pause ? 5 : 1;
-                            pause = true;
-                        }
+                            Console.SetCursorPosition(2, 1);
+                            Console.WriteLine($"Player 1: {player1RandomNumber}");
 
-                        if (points == 10 || points == -10)
-                        {
-                            lock (l)
+                            if (player1RandomNumber >= 5 && player1RandomNumber <= 7)
                             {
-                                finish = true;
+                                points += pause ? 5 : 1;
                                 pause = true;
-                                Monitor.Pulse(l);
+                            }
+
+                            if (points == 10 || points == -10)
+                            {
+                                lock (l)
+                                {
+                                    finish = true;
+                                    pause = true;
+                                    Monitor.Pulse(l);
+                                }
                             }
                         }
 
-                        Thread.Sleep(new Random().Next(100, 100 * player1RandomNumber));
                     }
+                    Thread.Sleep(new Random().Next(100, 100 * player1RandomNumber));
                 }
             }).Start();
 
@@ -52,28 +55,31 @@
                     lock (l)
                     {
                         player2RandomNumber = new Random().Next(1, 11);
-                        Console.SetCursorPosition(2, 8);
-                        Console.WriteLine($"Player 2: {player2RandomNumber}");
-
-                        if (player2RandomNumber >= 5 && player2RandomNumber <= 7)
+                        if (!finish)
                         {
-                            points -= !pause && !first ? 5 : 1;
-                            pause = false;
-                            first = false;
-                        }
+                            Console.SetCursorPosition(2, 8);
+                            Console.WriteLine($"Player 2: {player2RandomNumber}");
 
-                        if (points == 10 || points == -10)
-                        {
-                            lock (l)
+                            if (player2RandomNumber >= 5 && player2RandomNumber <= 7)
                             {
-                                finish = true;
-                                pause = true;
-                                Monitor.Pulse(l);
+                                points -= !pause && !first ? 5 : 1;
+                                pause = false;
+                                first = false;
+                            }
+
+                            if (points == 10 || points == -10)
+                            {
+                                lock (l)
+                                {
+                                    finish = true;
+                                    pause = true;
+                                    Monitor.Pulse(l);
+                                }
                             }
                         }
 
-                        Thread.Sleep(new Random().Next(100, 100 * player2RandomNumber));
                     }
+                    Thread.Sleep(new Random().Next(100, 100 * player2RandomNumber));
                 }
 
             }).Start();

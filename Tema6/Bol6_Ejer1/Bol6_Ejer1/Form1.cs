@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Security;
 
 namespace Bol6_Ejer1
@@ -12,25 +13,28 @@ namespace Bol6_Ejer1
         private void button1_Click(object sender, EventArgs e)
         {
             string? directory = textBox1.Text.Trim();
-            if (directory.StartsWith("%") && directory.EndsWith("%"))
+            if (directory.Length > 1)
             {
-                directory = directory.Remove(0, 1);
-                directory = directory.Remove(directory.Length - 1, 1);
-                directory = Environment.GetEnvironmentVariable(directory);
-                directoryInfo = directory != null ? new DirectoryInfo(directory) : null;
-            }
-            else
-            {
-                if (Directory.Exists(directory))
+                if (directory.StartsWith("%") && directory.EndsWith("%"))
                 {
-                    directoryInfo = new DirectoryInfo(directory);
+                    directory = directory.Remove(0, 1);
+                    directory = directory.Remove(directory.Length - 1, 1);
+                    directory = Environment.GetEnvironmentVariable(directory);
+                    directoryInfo = directory != null ? new DirectoryInfo(directory) : null;
                 }
                 else
                 {
-                    directoryInfo = null;
+                    if (Directory.Exists(directory))
+                    {
+                        directoryInfo = new DirectoryInfo(directory);
+                    }
+                    else
+                    {
+                        directoryInfo = null;
+                    }
                 }
+                UpdateDirectoryInfo();
             }
-            UpdateDirectoryInfo();
         }
 
         private void UpdateDirectoryInfo()
@@ -47,7 +51,7 @@ namespace Bol6_Ejer1
                 {
                     return;
                 }
-                if (directories.Length > 0)
+                if (directories.Length >= 0)
                 {
                     listBox1.Items.Clear();
                     listBox1.Items.Add("..");
@@ -84,41 +88,48 @@ namespace Bol6_Ejer1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem == "..")
+            if (listBox1.SelectedItem != null)
             {
-                if (directoryInfo.Parent != null)
+
+                if (listBox1.SelectedItem == "..")
                 {
-                    textBox1.Text = directoryInfo.Parent.FullName;
+                    if (directoryInfo.Parent != null)
+                    {
+                        textBox1.Text = directoryInfo.Parent.FullName;
+                        button1.PerformClick();
+                    }
+                }
+                else
+                {
+                    textBox1.Text = (string)listBox1.SelectedItem;
                     button1.PerformClick();
                 }
-            }
-            else
-            {
-                textBox1.Text = (string)listBox1.SelectedItem;
-                button1.PerformClick();
             }
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FileInfo? fileInfo = new FileInfo((string)listBox2.SelectedItem);
-            if (fileInfo != null)
+            if (listBox2.SelectedItem != null)
             {
-                switch (fileInfo.Length)
+                FileInfo? fileInfo = new FileInfo((string)listBox2.SelectedItem);
+                if (fileInfo != null)
                 {
-                    case < 1024:
-                        label1.Text = $"{fileInfo.Length} Bytes";
-                        break;
-                    case < 1000000:
-                        label1.Text = $"{fileInfo.Length / 1024} MB";
-                        break;
-                    default:
-                        label1.Text = $"{(fileInfo.Length / 1024) / 1024} GB";
-                        break;
-                }
-                if (fileInfo.Extension == ".txt")
-                {
-                    new Form2(File.ReadAllText(fileInfo.FullName), fileInfo.FullName).Show();
+                    switch (fileInfo.Length)
+                    {
+                        case < 1024:
+                            label1.Text = $"{fileInfo.Length} Bytes";
+                            break;
+                        case < 1000000:
+                            label1.Text = $"{fileInfo.Length / 1024} MB";
+                            break;
+                        default:
+                            label1.Text = $"{(fileInfo.Length / 1024) / 1024} GB";
+                            break;
+                    }
+                    if (fileInfo.Extension == ".txt")
+                    {
+                        new Form2(File.ReadAllText(fileInfo.FullName), fileInfo.FullName).Show();
+                    }
                 }
             }
         }
