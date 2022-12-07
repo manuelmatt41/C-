@@ -70,8 +70,6 @@ public class Form2 : Form
 
     private void Form2_FormClosed(object sender, FormClosedEventArgs e)
     {
-        Environment.Exit(0);
-
-
+            Environment.Exit(0);
     }
 }

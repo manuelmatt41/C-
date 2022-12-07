@@ -22,8 +22,14 @@ namespace Bol5_Ejer5._1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            RemoveSelectedItems(listBox1, "There are no values to remove");
-            RemoveSelectedItems(listBox2, "There are no values to remove");
+            if (listBox1.SelectedItems.Count > 0)
+            {
+                RemoveSelectedItems(listBox1, "There are no values to remove");
+            }
+            if (listBox2.SelectedItems.Count > 0)
+            {
+                RemoveSelectedItems(listBox2, "There are no values to remove");
+            }
             UpdateLabel();
         }
 

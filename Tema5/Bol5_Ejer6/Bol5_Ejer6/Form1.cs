@@ -15,7 +15,7 @@ namespace Bol5_Ejer6
             for (int i = 0; i < buttons.Length; i++)
             {
                 Button b = new Button();
-                b.Text = buttons[i];
+                b.Text = buttons[i].ToString();
                 b.Location = new Point(x, y);
                 if ((i + 1) % 3 == 0)
                 {
@@ -68,13 +68,13 @@ namespace Bol5_Ejer6
             }
         }
 
-        string[] buttons = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", "#" };
+        string buttons = "123456789*0#";
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
-            
+
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             button1.PerformClick();
@@ -82,8 +82,17 @@ namespace Bol5_Ejer6
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.ShowDialog();
-            File.WriteAllText(saveFileDialog1.FileName, textBox1.Text);
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (File.Exists(saveFileDialog1.FileName))
+                {
+                    File.AppendAllText($"{saveFileDialog1.FileName}{Environment.NewLine}", textBox1.Text);
+                }
+                else
+                {
+                    File.WriteAllText(saveFileDialog1.FileName, textBox1.Text);
+                }
+            }
         }
 
         private void Acercade_Click(object sender, EventArgs e)
