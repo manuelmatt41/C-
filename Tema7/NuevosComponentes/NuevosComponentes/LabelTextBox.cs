@@ -61,7 +61,6 @@ namespace NuevosComponentes
             set
             {
                 txt.Text = value;
-                TxtChanged?.Invoke(this, EventArgs.Empty);
             }
         }
         [Category("La propiedad cambio")]
@@ -76,6 +75,7 @@ namespace NuevosComponentes
             TextTxt = "";
             Reposition();
             txt.KeyUp += new KeyEventHandler(Txt_KeyUp);
+            txt.TextChanged += new EventHandler((sender, e) => TxtChanged?.Invoke(this, EventArgs.Empty));
         }
 
         private void Reposition()
