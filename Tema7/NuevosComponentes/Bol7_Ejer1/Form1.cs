@@ -47,5 +47,17 @@ namespace Bol7_Ejer1
         {
             this.Text = labelTextBox1.TextTxt;
         }
+
+        private void ClickMarkEtiquetaAvisp(object sender, EventArgs e)
+        {
+            if (etiquetaAviso1.Marca == Marca.MARK)
+            {
+                etiquetaAviso1.Marca = Marca.CIRCLE;
+            }
+            else
+            {
+                etiquetaAviso1.Marca = Marca.MARK;
+            }
+        }
     }
 }

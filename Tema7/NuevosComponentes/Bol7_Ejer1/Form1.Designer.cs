@@ -30,12 +30,14 @@
         {
             this.btChangePosition = new System.Windows.Forms.Button();
             this.btAddSeparation = new System.Windows.Forms.Button();
+            this.btCheck = new System.Windows.Forms.Button();
+            this.etiquetaAviso1 = new NuevosComponentes.EtiquetaAviso();
             this.labelTextBox1 = new NuevosComponentes.LabelTextBox();
             this.SuspendLayout();
             // 
             // btChangePosition
             // 
-            this.btChangePosition.Location = new System.Drawing.Point(263, 58);
+            this.btChangePosition.Location = new System.Drawing.Point(77, 113);
             this.btChangePosition.Name = "btChangePosition";
             this.btChangePosition.Size = new System.Drawing.Size(113, 23);
             this.btChangePosition.TabIndex = 1;
@@ -45,7 +47,7 @@
             // 
             // btAddSeparation
             // 
-            this.btAddSeparation.Location = new System.Drawing.Point(382, 58);
+            this.btAddSeparation.Location = new System.Drawing.Point(196, 113);
             this.btAddSeparation.Name = "btAddSeparation";
             this.btAddSeparation.Size = new System.Drawing.Size(92, 23);
             this.btAddSeparation.TabIndex = 2;
@@ -53,13 +55,33 @@
             this.btAddSeparation.UseVisualStyleBackColor = true;
             this.btAddSeparation.Click += new System.EventHandler(this.ClickAddSeparation);
             // 
+            // btCheck
+            // 
+            this.btCheck.Location = new System.Drawing.Point(249, 179);
+            this.btCheck.Name = "btCheck";
+            this.btCheck.Size = new System.Drawing.Size(75, 23);
+            this.btCheck.TabIndex = 4;
+            this.btCheck.Text = "Mark";
+            this.btCheck.UseVisualStyleBackColor = true;
+            this.btCheck.Click += new System.EventHandler(this.ClickMarkEtiquetaAvisp);
+            // 
+            // etiquetaAviso1
+            // 
+            this.etiquetaAviso1.Location = new System.Drawing.Point(77, 176);
+            this.etiquetaAviso1.Marca = NuevosComponentes.Marca.NOTHING;
+            this.etiquetaAviso1.Name = "etiquetaAviso1";
+            this.etiquetaAviso1.Size = new System.Drawing.Size(151, 26);
+            this.etiquetaAviso1.TabIndex = 3;
+            this.etiquetaAviso1.Text = "etiquetaAviso1";
+            // 
             // labelTextBox1
             // 
             this.labelTextBox1.Location = new System.Drawing.Point(106, 60);
             this.labelTextBox1.Name = "labelTextBox1";
             this.labelTextBox1.Position = NuevosComponentes.Posicion.LEFT;
+            this.labelTextBox1.PswChr = '\0';
             this.labelTextBox1.Separacion = 0;
-            this.labelTextBox1.Size = new System.Drawing.Size(150, 20);
+            this.labelTextBox1.Size = new System.Drawing.Size(172, 20);
             this.labelTextBox1.TabIndex = 0;
             this.labelTextBox1.TextTxt = "";
             this.labelTextBox1.TxtLbl = "LabelTextBox";
@@ -73,6 +95,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btCheck);
+            this.Controls.Add(this.etiquetaAviso1);
             this.Controls.Add(this.btAddSeparation);
             this.Controls.Add(this.btChangePosition);
             this.Controls.Add(this.labelTextBox1);
@@ -87,6 +111,8 @@
         private NuevosComponentes.LabelTextBox labelTextBox1;
         private System.Windows.Forms.Button btChangePosition;
         private System.Windows.Forms.Button btAddSeparation;
+        private NuevosComponentes.EtiquetaAviso etiquetaAviso1;
+        private System.Windows.Forms.Button btCheck;
     }
 }
 

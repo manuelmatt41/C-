@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{277BE060-4BBC-4AD3-8C74-85D8FBBDB797}</ProjectGuid>
+    <ProjectGuid>{818FCBD7-249C-4612-BFA2-A5F098C8B879}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NuevosComponentes</RootNamespace>
-    <AssemblyName>NuevosComponentes</AssemblyName>
+    <RootNamespace>Bol7_Ejer2</RootNamespace>
+    <AssemblyName>Bol7_Ejer2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -43,24 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EtiquetaAviso.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="EtiquetaAviso.Designer.cs">
-      <DependentUpon>EtiquetaAviso.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LabelTextBox.cs">
+    <Compile Include="AlertLabel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabelTextBox.Designer.cs">
-      <DependentUpon>LabelTextBox.cs</DependentUpon>
+    <Compile Include="AlertLabel.Designer.cs">
+      <DependentUpon>AlertLabel.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="LabelTextBox.resx">
-      <DependentUpon>LabelTextBox.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
