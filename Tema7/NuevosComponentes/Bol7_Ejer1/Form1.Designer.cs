@@ -70,16 +70,17 @@
             this.etiquetaAviso1.Location = new System.Drawing.Point(77, 176);
             this.etiquetaAviso1.Marca = NuevosComponentes.Marca.NOTHING;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
-            this.etiquetaAviso1.Size = new System.Drawing.Size(151, 26);
+            this.etiquetaAviso1.Size = new System.Drawing.Size(113, 20);
             this.etiquetaAviso1.TabIndex = 3;
             this.etiquetaAviso1.Text = "etiquetaAviso1";
             // 
             // labelTextBox1
             // 
+            this.labelTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelTextBox1.Location = new System.Drawing.Point(106, 60);
             this.labelTextBox1.Name = "labelTextBox1";
             this.labelTextBox1.Position = NuevosComponentes.Posicion.LEFT;
-            this.labelTextBox1.PswChr = '\0';
+            this.labelTextBox1.PswChr = '*';
             this.labelTextBox1.Separacion = 0;
             this.labelTextBox1.Size = new System.Drawing.Size(172, 20);
             this.labelTextBox1.TabIndex = 0;

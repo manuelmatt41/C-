@@ -1,4 +1,4 @@
-﻿namespace Bol7_Ejer2
+﻿namespace WindowsFormsControlLibrary1
 {
     partial class AlertLabel
     {
@@ -28,16 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // AlertLabel
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "AlertLabel";
-            this.Size = new System.Drawing.Size(270, 150);
-            this.ResumeLayout(false);
-
+            components = new System.ComponentModel.Container();
         }
 
         #endregion

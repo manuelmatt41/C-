@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{055B3E56-A5B1-49A4-BF9A-D9D086235D04}</ProjectGuid>
+    <ProjectGuid>{6C5A2D08-93CC-4A91-B7C1-AE6A24BA57B1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FormEjer2</RootNamespace>
-    <AssemblyName>FormEjer2</AssemblyName>
+    <RootNamespace>Form3</RootNamespace>
+    <AssemblyName>Form3</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WindowsFormsControlLibrary1\Component.csproj">
-      <Project>{8B9E648F-E086-4018-9A02-B096F447B52D}</Project>
-      <Name>Component</Name>
+    <ProjectReference Include="..\Bol7_Ejer3\Bol7_Ejer3.csproj">
+      <Project>{989B8B3F-DFB4-472D-B9E6-3EF164F1D999}</Project>
+      <Name>Bol7_Ejer3</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

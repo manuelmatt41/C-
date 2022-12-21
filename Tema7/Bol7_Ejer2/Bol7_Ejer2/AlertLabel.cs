@@ -12,13 +12,13 @@ namespace Bol7_Ejer2
 {
     public partial class AlertLabel : UserControl
     {
-        private Mark _marca = Mark.NOTHING;
-        public Mark Marca
+        private Mark _mark = Mark.NOTHING;
+        public Mark Mark
         {
-            get => _marca;
+            get => _mark;
             set
             {
-                _marca = value;
+                _mark = value;
                 Refresh();
             }
         }
@@ -35,10 +35,9 @@ namespace Bol7_Ejer2
             int offsetX = 0;
             int offsetY = 0;
             int h = this.Font.Height;
-
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-            switch (Marca)
+            switch (Mark)
             {
                 case Mark.MARK:
                     grosor = 3;
@@ -56,6 +55,7 @@ namespace Bol7_Ejer2
                     offsetY = 0;
                     break;
             }
+
             Font font = new Font(this.Font.FontFamily, 12);
             SolidBrush solidBrush = new SolidBrush(this.ForeColor);
             g.DrawString(this.Text, font, solidBrush, offsetX + grosor, offsetY);

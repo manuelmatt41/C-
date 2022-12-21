@@ -1,4 +1,4 @@
-﻿namespace FormEjer2
+﻿namespace Form3
 {
     partial class Form1
     {
@@ -28,31 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.alertLabel2 = new WindowsFormsControlLibrary1.AlertLabel();
+            this.multimediaDisplayButtons1 = new Bol7_Ejer3.MultimediaDisplayButtons();
             this.SuspendLayout();
             // 
-            // alertLabel2
+            // multimediaDisplayButtons1
             // 
-            this.alertLabel2.BackGradient = false;
-            this.alertLabel2.FirstGradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.alertLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.alertLabel2.Location = new System.Drawing.Point(256, 117);
-            this.alertLabel2.Mark = WindowsFormsControlLibrary1.Mark.CIRCLE;
-            this.alertLabel2.MarkImage = null;
-            this.alertLabel2.Name = "alertLabel2";
-            this.alertLabel2.SecondGradientColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.alertLabel2.Size = new System.Drawing.Size(137, 50);
-            this.alertLabel2.TabIndex = 1;
-            this.alertLabel2.Text = "alertLabel2";
-            this.alertLabel2.ClickInMark += new System.Windows.Forms.MouseEventHandler(this.TestEvent);
+            this.multimediaDisplayButtons1.FirstText = "Play";
+            this.multimediaDisplayButtons1.InformationButton = Bol7_Ejer3.InformationDisplay.TEXT;
+            this.multimediaDisplayButtons1.Location = new System.Drawing.Point(195, 129);
+            this.multimediaDisplayButtons1.Name = "multimediaDisplayButtons1";
+            this.multimediaDisplayButtons1.SecondText = "Pause";
+            this.multimediaDisplayButtons1.Size = new System.Drawing.Size(227, 79);
+            this.multimediaDisplayButtons1.TabIndex = 0;
+            this.multimediaDisplayButtons1.TimeFormat = "mm:ss";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.alertLabel2);
+            this.Controls.Add(this.multimediaDisplayButtons1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -61,8 +56,7 @@
 
         #endregion
 
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private WindowsFormsControlLibrary1.AlertLabel alertLabel2;
+        private Bol7_Ejer3.MultimediaDisplayButtons multimediaDisplayButtons1;
     }
 }
 

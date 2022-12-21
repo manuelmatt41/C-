@@ -78,13 +78,13 @@ namespace NuevosComponentes
         [Category("La propiedad cambió")]
         [Description("Se lanza cuando se escribe en el textbox del componente")]
         public event EventHandler TxtChanged;
+
         public LabelTextBox()
         {
             InitializeComponent();
             TxtLbl = this.Name;
             TextTxt = "";
             txt.KeyUp += new KeyEventHandler(Txt_KeyUp);
-            txt.TextChanged += new EventHandler((sender, e) => TxtChanged?.Invoke(this, EventArgs.Empty));
         }
 
         private void Reposition()
@@ -127,6 +127,10 @@ namespace NuevosComponentes
             e.Graphics.DrawLine(new Pen(Color.BlueViolet), lbl.Left, this.Height - 1, lbl.Left + lbl.Width, this.Height - 1);
         }
 
+        private void txtChanged(object sender, EventArgs e)
+        {
+            TxtChanged?.Invoke(this, e);
+        }
     }
     public enum Posicion
     {
