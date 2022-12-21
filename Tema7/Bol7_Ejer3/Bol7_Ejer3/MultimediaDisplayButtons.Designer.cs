@@ -34,7 +34,7 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(74, 22);
+            this.btnPlay.Location = new System.Drawing.Point(37, 23);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 23);
             this.btnPlay.TabIndex = 0;
@@ -45,7 +45,7 @@
             // lbTime
             // 
             this.lbTime.AutoSize = true;
-            this.lbTime.Location = new System.Drawing.Point(94, 48);
+            this.lbTime.Location = new System.Drawing.Point(57, 49);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(34, 13);
             this.lbTime.TabIndex = 1;
@@ -58,7 +58,7 @@
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.btnPlay);
             this.Name = "MultimediaDisplayButtons";
-            this.Size = new System.Drawing.Size(227, 79);
+            this.Size = new System.Drawing.Size(155, 79);
             this.ResumeLayout(false);
             this.PerformLayout();
 

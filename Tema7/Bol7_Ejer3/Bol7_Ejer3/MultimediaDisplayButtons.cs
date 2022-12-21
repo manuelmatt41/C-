@@ -38,7 +38,7 @@ namespace Bol7_Ejer3
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new InvalidEnumArgumentException();
+                    throw new ArgumentException();
                 }
 
                 _firstText = value;
@@ -53,7 +53,7 @@ namespace Bol7_Ejer3
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new InvalidEnumArgumentException();
+                    throw new ArgumentException();
                 }
 
                 _secondText = value;
@@ -68,16 +68,30 @@ namespace Bol7_Ejer3
             {
                 if (!IsCorrectFormat(value))
                 {
-                    throw new InvalidEnumArgumentException();
+                    throw new ArgumentException();
                 }
 
                 _timeFormat = value;
-                lbTime.Text = new DateTime(600000).ToString(value);
             }
         }
 
-        private int _minutes = 5;
-        private int _seconds = 0;
+        private int _seconds;
+        public int Seconds
+        {
+            get { return _seconds; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException();
+                }
+
+                _seconds = value;
+            }
+        }
+
+        private bool _isPlaying= false;
+        public bool IsPlaying { get { return _isPlaying; } }
 
         public MultimediaDisplayButtons()
         {
@@ -93,6 +107,7 @@ namespace Bol7_Ejer3
                     break;
             }
             PlayClick?.Invoke(this, EventArgs.Empty);
+            _isPlaying = !_isPlaying;
         }
 
         private bool IsCorrectFormat(string format)
