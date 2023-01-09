@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Resources;
@@ -13,105 +14,47 @@ namespace Bol7_Ejer3
 {
     public partial class MultimediaDisplayButtons : UserControl
     {
+        private readonly string playText = "Play";
+        private readonly string pauseText = "Pause";
+
+        private bool showImages = false;
+        public bool ShowImages { get => showImages; set => showImages = value; }
+
+        private int seconds = 0;
+        private int minutes = 0;
+
+        public bool IsPause { get => btnPlay.Text == pauseText; }
+
         public event EventHandler PlayClick;
-
-        private InformationDisplay _informationButton = InformationDisplay.TEXT;
-        public InformationDisplay InformationButton
-        {
-            get { return _informationButton; }
-            set
-            {
-                if (!Enum.IsDefined(typeof(InformationDisplay), value))
-                {
-                    throw new InvalidEnumArgumentException();
-                }
-
-                _informationButton = value;
-            }
-        }
-
-        private string _firstText = "Play";
-        public string FirstText
-        {
-            get { return _firstText; }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new InvalidEnumArgumentException();
-                }
-
-                _firstText = value;
-            }
-        }
-
-        private string _secondText = "Pause";
-        public string SecondText
-        {
-            get { return _secondText; }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new InvalidEnumArgumentException();
-                }
-
-                _secondText = value;
-            }
-        }
-
-        private string _timeFormat = "mm:ss";
-        public string TimeFormat
-        {
-            get { return _timeFormat; }
-            set
-            {
-                if (!IsCorrectFormat(value))
-                {
-                    throw new InvalidEnumArgumentException();
-                }
-
-                _timeFormat = value;
-                lbTime.Text = new DateTime(600000).ToString(value);
-            }
-        }
-
-        private int _minutes = 5;
-        private int _seconds = 0;
+        public event EventHandler DesbordaTiempo;
 
         public MultimediaDisplayButtons()
         {
             InitializeComponent();
         }
 
-        private void ButtonPlayInformationChange(object sender, EventArgs e)
+        private void ChangeText(object sender, EventArgs e)
         {
-            switch (InformationButton)
-            {
-                case InformationDisplay.TEXT:
-                    btnPlay.Text = btnPlay.Text == FirstText ? SecondText : FirstText;
-                    break;
-            }
+            btnPlay.Text = IsPause ? playText : pauseText;
+
             PlayClick?.Invoke(this, EventArgs.Empty);
         }
 
-        private bool IsCorrectFormat(string format)
+        private void TimeCount(object sender, EventArgs e)
         {
-            switch (format)
+            if (!IsPause)
             {
-                case "mm:ss":
-                    return true;
-                case "HH:mm:ss":
-                    return true;
-                default:
-                    return false;
+                lblTime.Text = $"{minutes:00}:{seconds:00}";
+                seconds++;
+                //TODO No puede ser nunca negativo
+                if (seconds > 59)
+                {
+                    seconds = 0;
+                    DesbordaTiempo?.Invoke(this, EventArgs.Empty);
+                }
+                //Trace.WriteLine($"The time is {lblTime.Text}");
             }
         }
-    }
-
-    public enum InformationDisplay
-    {
-        TEXT, IMAGE
     }
 }
 

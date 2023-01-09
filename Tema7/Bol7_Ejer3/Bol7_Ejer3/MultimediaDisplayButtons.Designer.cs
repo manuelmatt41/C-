@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnPlay = new System.Windows.Forms.Button();
-            this.lbTime = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnPlay
@@ -40,22 +43,28 @@
             this.btnPlay.TabIndex = 0;
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = true;
-            this.btnPlay.Click += new System.EventHandler(this.ButtonPlayInformationChange);
+            this.btnPlay.Click += new System.EventHandler(this.ChangeText);
             // 
-            // lbTime
+            // lblTime
             // 
-            this.lbTime.AutoSize = true;
-            this.lbTime.Location = new System.Drawing.Point(94, 48);
-            this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(34, 13);
-            this.lbTime.TabIndex = 1;
-            this.lbTime.Text = "00:00";
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(94, 48);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(34, 13);
+            this.lblTime.TabIndex = 1;
+            this.lblTime.Text = "00:00";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.TimeCount);
             // 
             // MultimediaDisplayButtons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lbTime);
+            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnPlay);
             this.Name = "MultimediaDisplayButtons";
             this.Size = new System.Drawing.Size(227, 79);
@@ -67,6 +76,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.Label lbTime;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
