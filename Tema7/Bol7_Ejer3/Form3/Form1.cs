@@ -17,7 +17,6 @@ namespace Form3
     {
         private const int MAX_TIME_INTERVAL = 20;
         private List<Image> showImages = new List<Image>();
-        FileInfo[] imagesFiles;
 
         public Form1()
         {
@@ -43,7 +42,11 @@ namespace Form3
                 FileInfo[] imagesFiles = GetImageFromDirectory(new DirectoryInfo(folderBrowserDialog1.SelectedPath), ".png", ".jpg");
 
                 Array.ForEach(imagesFiles, image => showImages.Add(Image.FromFile(image.FullName)));
-                Trace.WriteLine(string.Join(",", showImages));
+
+                multimediaDisplayButtons1.Enabled = showImages.Count > 0;
+
+                Trace.WriteLine("Images:");
+                Array.ForEach(showImages.ToArray(), image => Trace.Write($"{image},"));
             }
         }
 
@@ -53,19 +56,43 @@ namespace Form3
             return Array.FindAll(files, file => extensions.Contains(file.Extension));
         }
 
-        private void ChooseDirectory(object senderm, EventArgs e)
+        private void Pause(object sender, EventArgs e)
         {
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            timer1.Enabled = !multimediaDisplayButtons1.IsPause;
+            if (timer1.Enabled)
             {
-                imagesFiles = GetImagesFiles(folderBrowserDialog1.SelectedPath, new string[] { ".png", ".jpg", ".jpeg" });
+                timer1.Interval = ((int)cbTimeInterval.SelectedItem) * 1000;
+                Trace.WriteLine($"Selected time: {(int)cbTimeInterval.SelectedItem}");
+                Trace.WriteLine($"Interval : {timer1.Interval}");
             }
         }
 
-        private FileInfo[] GetImagesFiles(string path, string[] extensions)
+        private void ChangeImage(object sender, EventArgs e)
         {
-            Trace.WriteLine(path);
-            FileInfo[] images = new DirectoryInfo(path).GetFiles();
-            return Array.FindAll(images, (image) => extensions.Contains(image.Extension));
+            if (showImages.Count == 0)
+            {
+                return;
+            }
+            if (pictureBox1.Image == null && showImages.Count > 0)
+            {
+                pictureBox1.Image = showImages.First();
+                return;
+            }
+
+            if (pictureBox1.Image == showImages.Last())
+            {
+                pictureBox1.Image = showImages.First();
+                return;
+            }
+
+            pictureBox1.Image = showImages[showImages.FindIndex(image => image == pictureBox1.Image) + 1];
+            //pictureBox1.Size = pictureBox1.Image.Size;
+        }
+
+        private void AddMinutes(object sender, EventArgs e)
+        {
+            multimediaDisplayButtons1.AddMinutes();
+            Trace.WriteLine("Minute added");
         }
     }
 }

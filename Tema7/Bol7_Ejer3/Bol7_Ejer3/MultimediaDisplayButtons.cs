@@ -14,16 +14,27 @@ namespace Bol7_Ejer3
 {
     public partial class MultimediaDisplayButtons : UserControl
     {
-        private readonly string playText = "Play";
-        private readonly string pauseText = "Pause";
+        private readonly string PLAY_TEXT = "Play";
+        private readonly string PAUSE_TEXT = "Pause";
 
-        private bool showImages = false;
+        private bool showImages;
         public bool ShowImages { get => showImages; set => showImages = value; }
 
-        private int seconds = 0;
+        private int seconds = 55;
         private int minutes = 0;
 
-        public bool IsPause { get => btnPlay.Text == pauseText; }
+        private bool enabled;
+        public new bool Enabled
+        {
+            get => enabled;
+            set
+            {
+                enabled = value;
+                btnPlay.Enabled = enabled;
+            }
+        }
+
+        public bool IsPause { get => btnPlay.Text == PLAY_TEXT; }
 
         public event EventHandler PlayClick;
         public event EventHandler DesbordaTiempo;
@@ -34,9 +45,14 @@ namespace Bol7_Ejer3
             InitializeComponent();
         }
 
+        public void AddMinutes()
+        {
+            minutes++;
+        }
+
         private void ChangeText(object sender, EventArgs e)
         {
-            btnPlay.Text = IsPause ? playText : pauseText;
+            btnPlay.Text = IsPause ? PAUSE_TEXT : PLAY_TEXT;
 
             PlayClick?.Invoke(this, EventArgs.Empty);
         }

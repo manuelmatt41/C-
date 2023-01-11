@@ -36,6 +36,7 @@
             // 
             // btnPlay
             // 
+            this.btnPlay.Enabled = false;
             this.btnPlay.Location = new System.Drawing.Point(37, 23);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 23);

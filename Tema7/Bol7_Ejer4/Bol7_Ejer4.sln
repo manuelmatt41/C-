@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bol7_Ejer4", "Bol7_Ejer4\Bol7_Ejer4.csproj", "{BF1C0117-8131-484E-AAE4-DF6FCBF16C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bol7_Ejer4_Form", "Bol7_Ejer4_Form\Bol7_Ejer4_Form.csproj", "{9ADCD371-0D69-4094-B2BB-A4F2C4F02162}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF1C0117-8131-484E-AAE4-DF6FCBF16C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1C0117-8131-484E-AAE4-DF6FCBF16C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1C0117-8131-484E-AAE4-DF6FCBF16C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1C0117-8131-484E-AAE4-DF6FCBF16C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ADCD371-0D69-4094-B2BB-A4F2C4F02162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADCD371-0D69-4094-B2BB-A4F2C4F02162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADCD371-0D69-4094-B2BB-A4F2C4F02162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADCD371-0D69-4094-B2BB-A4F2C4F02162}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8962DC6-A0DA-4455-99C6-5B6C6481BE74}
+	EndGlobalSection
+EndGlobal
