@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +17,8 @@ namespace Form3
     {
         private const int MAX_TIME_INTERVAL = 20;
         private List<Image> showImages = new List<Image>();
+        FileInfo[] imagesFiles;
+
         public Form1()
         {
             InitializeComponent();
@@ -48,6 +51,21 @@ namespace Form3
         {
             FileInfo[] files = directory.GetFiles();
             return Array.FindAll(files, file => extensions.Contains(file.Extension));
+        }
+
+        private void ChooseDirectory(object senderm, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                imagesFiles = GetImagesFiles(folderBrowserDialog1.SelectedPath, new string[] { ".png", ".jpg", ".jpeg" });
+            }
+        }
+
+        private FileInfo[] GetImagesFiles(string path, string[] extensions)
+        {
+            Trace.WriteLine(path);
+            FileInfo[] images = new DirectoryInfo(path).GetFiles();
+            return Array.FindAll(images, (image) => extensions.Contains(image.Extension));
         }
     }
 }

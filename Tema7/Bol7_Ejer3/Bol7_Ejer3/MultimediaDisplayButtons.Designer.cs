@@ -32,12 +32,11 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(74, 22);
+            this.btnPlay.Location = new System.Drawing.Point(37, 23);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 23);
             this.btnPlay.TabIndex = 0;
@@ -48,7 +47,7 @@
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(94, 48);
+            this.lblTime.Location = new System.Drawing.Point(59, 49);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(34, 13);
             this.lblTime.TabIndex = 1;
@@ -67,7 +66,7 @@
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnPlay);
             this.Name = "MultimediaDisplayButtons";
-            this.Size = new System.Drawing.Size(227, 79);
+            this.Size = new System.Drawing.Size(155, 79);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,6 +77,5 @@
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
     }
 }

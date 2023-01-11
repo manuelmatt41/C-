@@ -28,6 +28,7 @@ namespace Bol7_Ejer3
         public event EventHandler PlayClick;
         public event EventHandler DesbordaTiempo;
 
+
         public MultimediaDisplayButtons()
         {
             InitializeComponent();
