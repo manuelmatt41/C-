@@ -37,7 +37,7 @@
             // 
             // btChangePosition
             // 
-            this.btChangePosition.Location = new System.Drawing.Point(77, 113);
+            this.btChangePosition.Location = new System.Drawing.Point(12, 12);
             this.btChangePosition.Name = "btChangePosition";
             this.btChangePosition.Size = new System.Drawing.Size(113, 23);
             this.btChangePosition.TabIndex = 1;
@@ -47,7 +47,7 @@
             // 
             // btAddSeparation
             // 
-            this.btAddSeparation.Location = new System.Drawing.Point(196, 113);
+            this.btAddSeparation.Location = new System.Drawing.Point(131, 12);
             this.btAddSeparation.Name = "btAddSeparation";
             this.btAddSeparation.Size = new System.Drawing.Size(92, 23);
             this.btAddSeparation.TabIndex = 2;
@@ -57,7 +57,7 @@
             // 
             // btCheck
             // 
-            this.btCheck.Location = new System.Drawing.Point(249, 179);
+            this.btCheck.Location = new System.Drawing.Point(229, 12);
             this.btCheck.Name = "btCheck";
             this.btCheck.Size = new System.Drawing.Size(75, 23);
             this.btCheck.TabIndex = 4;
@@ -67,7 +67,7 @@
             // 
             // etiquetaAviso1
             // 
-            this.etiquetaAviso1.Location = new System.Drawing.Point(77, 176);
+            this.etiquetaAviso1.Location = new System.Drawing.Point(310, 15);
             this.etiquetaAviso1.Marca = NuevosComponentes.Marca.NOTHING;
             this.etiquetaAviso1.Name = "etiquetaAviso1";
             this.etiquetaAviso1.Size = new System.Drawing.Size(113, 20);
@@ -77,7 +77,7 @@
             // labelTextBox1
             // 
             this.labelTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelTextBox1.Location = new System.Drawing.Point(106, 60);
+            this.labelTextBox1.Location = new System.Drawing.Point(12, 60);
             this.labelTextBox1.Name = "labelTextBox1";
             this.labelTextBox1.Position = NuevosComponentes.Posicion.LEFT;
             this.labelTextBox1.PswChr = '\0';

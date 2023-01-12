@@ -37,7 +37,7 @@ namespace NuevosComponentes
             {
                 if (value < 0) throw new ArgumentOutOfRangeException();
                 _separation = value;
-                CambiaSeparacion?.Invoke(this, EventArgs.Empty);
+                OnSeparacionChanged(this, EventArgs.Empty);
                 Refresh();
             }
         }
@@ -49,6 +49,7 @@ namespace NuevosComponentes
             set
             {
                 lbl.Text = value;
+                Refresh();
             }
         }
         [Category("Appearance")]
@@ -59,6 +60,7 @@ namespace NuevosComponentes
             set
             {
                 txt.Text = value;
+                Refresh();
             }
         }
         [Category("Appearance")]
@@ -130,6 +132,11 @@ namespace NuevosComponentes
         private void txtChanged(object sender, EventArgs e)
         {
             TxtChanged?.Invoke(this, e);
+        }
+
+        private void OnSeparacionChanged(object sender, EventArgs e)
+        {
+            CambiaSeparacion?.Invoke(sender, e);
         }
     }
     public enum Posicion

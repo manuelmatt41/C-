@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DibujoAhorcado.cs" />
+    <Compile Include="DibujoAhorcado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="DibujoAhorcado.Designer.cs">
       <DependentUpon>DibujoAhorcado.cs</DependentUpon>
     </Compile>

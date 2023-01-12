@@ -16,5 +16,11 @@ namespace Bol7_Ejer4_Form
         {
             InitializeComponent();
         }
+
+        private void SumError(object sender, EventArgs e)
+        {
+            dibujoAhorcado1.Error++;
+            this.Text = dibujoAhorcado1.Error.ToString();
+        }
     }
 }

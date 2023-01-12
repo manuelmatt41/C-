@@ -1,6 +1,6 @@
 ﻿namespace Bol7_Ejer2
 {
-    partial class AlertLabel
+    partial class DibujoAhorcado
     {
         /// <summary> 
         /// Variable del diseñador necesaria.

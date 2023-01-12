@@ -40,12 +40,12 @@ namespace Bol7_Ejer1
 
         private void KeyUpChangeTitle(object sender, KeyEventArgs e)
         {
-            //this.Text = e.KeyData.ToString();
+            this.Text = e.KeyData.ToString();
         }
 
         private void TextChangeChangeTitle(object sender, EventArgs e)
         {
-            this.Text = labelTextBox1.TextTxt;
+            labelTextBox1.TxtLbl = labelTextBox1.TextTxt;
         }
 
         private void ClickMarkEtiquetaAvisp(object sender, EventArgs e)
